@@ -1,5 +1,5 @@
-// GENERATED CODE - DO NOT MODIFY BY HAND
 // coverage:ignore-file
+// GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
@@ -9,52 +9,47 @@ part of 'filesize.dart';
 // FreezedGenerator
 // **************************************************************************
 
-// dart format off
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
+
+FileSize _$FileSizeFromJson(Map<String, dynamic> json) {
+  return _FileSize.fromJson(json);
+}
 
 /// @nodoc
 mixin _$FileSize {
   /// Total bytes.
-  int get totalBytes;
+  int get totalBytes => throw _privateConstructorUsedError;
+
+  /// Serializes this FileSize to a JSON map.
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
 
   /// Create a copy of FileSize
   /// with the given fields replaced by the non-null parameter values.
   @JsonKey(includeFromJson: false, includeToJson: false)
-  @pragma('vm:prefer-inline')
   $FileSizeCopyWith<FileSize> get copyWith =>
-      _$FileSizeCopyWithImpl<FileSize>(this as FileSize, _$identity);
-
-  /// Serializes this FileSize to a JSON map.
-  Map<String, dynamic> toJson();
-
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is FileSize &&
-            (identical(other.totalBytes, totalBytes) ||
-                other.totalBytes == totalBytes));
-  }
-
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(runtimeType, totalBytes);
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract mixin class $FileSizeCopyWith<$Res> {
-  factory $FileSizeCopyWith(FileSize value, $Res Function(FileSize) _then) =
-      _$FileSizeCopyWithImpl;
+abstract class $FileSizeCopyWith<$Res> {
+  factory $FileSizeCopyWith(FileSize value, $Res Function(FileSize) then) =
+      _$FileSizeCopyWithImpl<$Res, FileSize>;
   @useResult
   $Res call({int totalBytes});
 }
 
 /// @nodoc
-class _$FileSizeCopyWithImpl<$Res> implements $FileSizeCopyWith<$Res> {
-  _$FileSizeCopyWithImpl(this._self, this._then);
+class _$FileSizeCopyWithImpl<$Res, $Val extends FileSize>
+    implements $FileSizeCopyWith<$Res> {
+  _$FileSizeCopyWithImpl(this._value, this._then);
 
-  final FileSize _self;
-  final $Res Function(FileSize) _then;
+  // ignore: unused_field
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
   /// Create a copy of FileSize
   /// with the given fields replaced by the non-null parameter values.
@@ -63,203 +58,67 @@ class _$FileSizeCopyWithImpl<$Res> implements $FileSizeCopyWith<$Res> {
   $Res call({
     Object? totalBytes = null,
   }) {
-    return _then(_self.copyWith(
+    return _then(_value.copyWith(
       totalBytes: null == totalBytes
-          ? _self.totalBytes
+          ? _value.totalBytes
           : totalBytes // ignore: cast_nullable_to_non_nullable
               as int,
-    ));
+    ) as $Val);
   }
 }
 
-/// Adds pattern-matching-related methods to [FileSize].
-extension FileSizePatterns on FileSize {
-  /// A variant of `map` that fallback to returning `orElse`.
-  ///
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case final Subclass value:
-  ///     return ...;
-  ///   case _:
-  ///     return orElse();
-  /// }
-  /// ```
+/// @nodoc
+abstract class _$$FileSizeImplCopyWith<$Res>
+    implements $FileSizeCopyWith<$Res> {
+  factory _$$FileSizeImplCopyWith(
+          _$FileSizeImpl value, $Res Function(_$FileSizeImpl) then) =
+      __$$FileSizeImplCopyWithImpl<$Res>;
+  @override
+  @useResult
+  $Res call({int totalBytes});
+}
 
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>(
-    TResult Function(_FileSize value)? $default, {
-    required TResult orElse(),
+/// @nodoc
+class __$$FileSizeImplCopyWithImpl<$Res>
+    extends _$FileSizeCopyWithImpl<$Res, _$FileSizeImpl>
+    implements _$$FileSizeImplCopyWith<$Res> {
+  __$$FileSizeImplCopyWithImpl(
+      _$FileSizeImpl _value, $Res Function(_$FileSizeImpl) _then)
+      : super(_value, _then);
+
+  /// Create a copy of FileSize
+  /// with the given fields replaced by the non-null parameter values.
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? totalBytes = null,
   }) {
-    final _that = this;
-    switch (_that) {
-      case _FileSize() when $default != null:
-        return $default(_that);
-      case _:
-        return orElse();
-    }
-  }
-
-  /// A `switch`-like method, using callbacks.
-  ///
-  /// Callbacks receives the raw object, upcasted.
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case final Subclass value:
-  ///     return ...;
-  ///   case final Subclass2 value:
-  ///     return ...;
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>(
-    TResult Function(_FileSize value) $default,
-  ) {
-    final _that = this;
-    switch (_that) {
-      case _FileSize():
-        return $default(_that);
-      case _:
-        throw StateError('Unexpected subclass');
-    }
-  }
-
-  /// A variant of `map` that fallback to returning `null`.
-  ///
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case final Subclass value:
-  ///     return ...;
-  ///   case _:
-  ///     return null;
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>(
-    TResult? Function(_FileSize value)? $default,
-  ) {
-    final _that = this;
-    switch (_that) {
-      case _FileSize() when $default != null:
-        return $default(_that);
-      case _:
-        return null;
-    }
-  }
-
-  /// A variant of `when` that fallback to an `orElse` callback.
-  ///
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case Subclass(:final field):
-  ///     return ...;
-  ///   case _:
-  ///     return orElse();
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>(
-    TResult Function(int totalBytes)? $default, {
-    required TResult orElse(),
-  }) {
-    final _that = this;
-    switch (_that) {
-      case _FileSize() when $default != null:
-        return $default(_that.totalBytes);
-      case _:
-        return orElse();
-    }
-  }
-
-  /// A `switch`-like method, using callbacks.
-  ///
-  /// As opposed to `map`, this offers destructuring.
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case Subclass(:final field):
-  ///     return ...;
-  ///   case Subclass2(:final field2):
-  ///     return ...;
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>(
-    TResult Function(int totalBytes) $default,
-  ) {
-    final _that = this;
-    switch (_that) {
-      case _FileSize():
-        return $default(_that.totalBytes);
-      case _:
-        throw StateError('Unexpected subclass');
-    }
-  }
-
-  /// A variant of `when` that fallback to returning `null`
-  ///
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case Subclass(:final field):
-  ///     return ...;
-  ///   case _:
-  ///     return null;
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>(
-    TResult? Function(int totalBytes)? $default,
-  ) {
-    final _that = this;
-    switch (_that) {
-      case _FileSize() when $default != null:
-        return $default(_that.totalBytes);
-      case _:
-        return null;
-    }
+    return _then(_$FileSizeImpl(
+      null == totalBytes
+          ? _value.totalBytes
+          : totalBytes // ignore: cast_nullable_to_non_nullable
+              as int,
+    ));
   }
 }
 
 /// @nodoc
 @JsonSerializable()
-class _FileSize extends FileSize {
-  const _FileSize(this.totalBytes) : super._();
-  factory _FileSize.fromJson(Map<String, dynamic> json) =>
-      _$FileSizeFromJson(json);
+class _$FileSizeImpl extends _FileSize {
+  const _$FileSizeImpl(this.totalBytes) : super._();
+
+  factory _$FileSizeImpl.fromJson(Map<String, dynamic> json) =>
+      _$$FileSizeImplFromJson(json);
 
   /// Total bytes.
   @override
   final int totalBytes;
 
-  /// Create a copy of FileSize
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @pragma('vm:prefer-inline')
-  _$FileSizeCopyWith<_FileSize> get copyWith =>
-      __$FileSizeCopyWithImpl<_FileSize>(this, _$identity);
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$FileSizeToJson(
-      this,
-    );
-  }
-
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _FileSize &&
+            other is _$FileSizeImpl &&
             (identical(other.totalBytes, totalBytes) ||
                 other.totalBytes == totalBytes));
   }
@@ -267,39 +126,38 @@ class _FileSize extends FileSize {
   @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, totalBytes);
-}
 
-/// @nodoc
-abstract mixin class _$FileSizeCopyWith<$Res>
-    implements $FileSizeCopyWith<$Res> {
-  factory _$FileSizeCopyWith(_FileSize value, $Res Function(_FileSize) _then) =
-      __$FileSizeCopyWithImpl;
+  /// Create a copy of FileSize
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
-  @useResult
-  $Res call({int totalBytes});
+  @pragma('vm:prefer-inline')
+  _$$FileSizeImplCopyWith<_$FileSizeImpl> get copyWith =>
+      __$$FileSizeImplCopyWithImpl<_$FileSizeImpl>(this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$$FileSizeImplToJson(
+      this,
+    );
+  }
 }
 
-/// @nodoc
-class __$FileSizeCopyWithImpl<$Res> implements _$FileSizeCopyWith<$Res> {
-  __$FileSizeCopyWithImpl(this._self, this._then);
+abstract class _FileSize extends FileSize {
+  const factory _FileSize(final int totalBytes) = _$FileSizeImpl;
+  const _FileSize._() : super._();
 
-  final _FileSize _self;
-  final $Res Function(_FileSize) _then;
+  factory _FileSize.fromJson(Map<String, dynamic> json) =
+      _$FileSizeImpl.fromJson;
+
+  /// Total bytes.
+  @override
+  int get totalBytes;
 
   /// Create a copy of FileSize
   /// with the given fields replaced by the non-null parameter values.
   @override
-  @pragma('vm:prefer-inline')
-  $Res call({
-    Object? totalBytes = null,
-  }) {
-    return _then(_FileSize(
-      null == totalBytes
-          ? _self.totalBytes
-          : totalBytes // ignore: cast_nullable_to_non_nullable
-              as int,
-    ));
-  }
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  _$$FileSizeImplCopyWith<_$FileSizeImpl> get copyWith =>
+      throw _privateConstructorUsedError;
 }
-
-// dart format on

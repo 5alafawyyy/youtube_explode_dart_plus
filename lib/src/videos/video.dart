@@ -13,7 +13,7 @@ typedef MusicData = ({String? song, String? artist, String? album, Uri? image});
 
 /// YouTube video metadata.
 @freezed
-abstract class Video with _$Video {
+class Video with _$Video {
   /// Video URL.
   String get url => 'https://www.youtube.com/watch?v=$id';
 
@@ -60,6 +60,7 @@ abstract class Video with _$Video {
     /// Returns true if this is a live stream.
     //ignore: avoid_positional_boolean_parameters
     bool isLive, [
+
     /// Music data such as song, artist, album, and image.
     /// Empty if no data is available.
     List<MusicData> musicData = const [],
@@ -145,6 +146,7 @@ abstract class Video with _$Video {
     /// Music data such as song, artist, album, and image.
     /// Empty if no data is available.
     List<MusicData> musicData, [
+
     /// Used internally.
     /// Shouldn't be used in the code.
     @internal WatchPage? watchPage,

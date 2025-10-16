@@ -1,5 +1,5 @@
-// GENERATED CODE - DO NOT MODIFY BY HAND
 // coverage:ignore-file
+// GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
@@ -9,61 +9,38 @@ part of 'channel.dart';
 // FreezedGenerator
 // **************************************************************************
 
-// dart format off
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$Channel {
   /// Channel ID.
-  ChannelId get id;
+  ChannelId get id => throw _privateConstructorUsedError;
 
   /// Channel title.
-  String get title;
+  String get title => throw _privateConstructorUsedError;
 
   /// URL of the channel's logo image.
-  String get logoUrl;
+  String get logoUrl => throw _privateConstructorUsedError;
 
   /// URL of the channel's banner image.
-  String get bannerUrl;
+  String get bannerUrl => throw _privateConstructorUsedError;
 
   /// The (approximate) channel subscriber's count.
-  int? get subscribersCount;
+  int? get subscribersCount => throw _privateConstructorUsedError;
 
   /// Create a copy of Channel
   /// with the given fields replaced by the non-null parameter values.
   @JsonKey(includeFromJson: false, includeToJson: false)
-  @pragma('vm:prefer-inline')
-  $ChannelCopyWith<Channel> get copyWith =>
-      _$ChannelCopyWithImpl<Channel>(this as Channel, _$identity);
-
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is Channel &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.title, title) || other.title == title) &&
-            (identical(other.logoUrl, logoUrl) || other.logoUrl == logoUrl) &&
-            (identical(other.bannerUrl, bannerUrl) ||
-                other.bannerUrl == bannerUrl) &&
-            (identical(other.subscribersCount, subscribersCount) ||
-                other.subscribersCount == subscribersCount));
-  }
-
-  @override
-  int get hashCode =>
-      Object.hash(runtimeType, id, title, logoUrl, bannerUrl, subscribersCount);
-
-  @override
-  String toString() {
-    return 'Channel(id: $id, title: $title, logoUrl: $logoUrl, bannerUrl: $bannerUrl, subscribersCount: $subscribersCount)';
-  }
+  $ChannelCopyWith<Channel> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract mixin class $ChannelCopyWith<$Res> {
-  factory $ChannelCopyWith(Channel value, $Res Function(Channel) _then) =
-      _$ChannelCopyWithImpl;
+abstract class $ChannelCopyWith<$Res> {
+  factory $ChannelCopyWith(Channel value, $Res Function(Channel) then) =
+      _$ChannelCopyWithImpl<$Res, Channel>;
   @useResult
   $Res call(
       {ChannelId id,
@@ -76,11 +53,14 @@ abstract mixin class $ChannelCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$ChannelCopyWithImpl<$Res> implements $ChannelCopyWith<$Res> {
-  _$ChannelCopyWithImpl(this._self, this._then);
+class _$ChannelCopyWithImpl<$Res, $Val extends Channel>
+    implements $ChannelCopyWith<$Res> {
+  _$ChannelCopyWithImpl(this._value, this._then);
 
-  final Channel _self;
-  final $Res Function(Channel) _then;
+  // ignore: unused_field
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
   /// Create a copy of Channel
   /// with the given fields replaced by the non-null parameter values.
@@ -93,28 +73,28 @@ class _$ChannelCopyWithImpl<$Res> implements $ChannelCopyWith<$Res> {
     Object? bannerUrl = null,
     Object? subscribersCount = freezed,
   }) {
-    return _then(_self.copyWith(
+    return _then(_value.copyWith(
       id: null == id
-          ? _self.id
+          ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as ChannelId,
       title: null == title
-          ? _self.title
+          ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
               as String,
       logoUrl: null == logoUrl
-          ? _self.logoUrl
+          ? _value.logoUrl
           : logoUrl // ignore: cast_nullable_to_non_nullable
               as String,
       bannerUrl: null == bannerUrl
-          ? _self.bannerUrl
+          ? _value.bannerUrl
           : bannerUrl // ignore: cast_nullable_to_non_nullable
               as String,
       subscribersCount: freezed == subscribersCount
-          ? _self.subscribersCount
+          ? _value.subscribersCount
           : subscribersCount // ignore: cast_nullable_to_non_nullable
               as int?,
-    ));
+    ) as $Val);
   }
 
   /// Create a copy of Channel
@@ -122,182 +102,78 @@ class _$ChannelCopyWithImpl<$Res> implements $ChannelCopyWith<$Res> {
   @override
   @pragma('vm:prefer-inline')
   $ChannelIdCopyWith<$Res> get id {
-    return $ChannelIdCopyWith<$Res>(_self.id, (value) {
-      return _then(_self.copyWith(id: value));
+    return $ChannelIdCopyWith<$Res>(_value.id, (value) {
+      return _then(_value.copyWith(id: value) as $Val);
     });
   }
 }
 
-/// Adds pattern-matching-related methods to [Channel].
-extension ChannelPatterns on Channel {
-  /// A variant of `map` that fallback to returning `orElse`.
-  ///
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case final Subclass value:
-  ///     return ...;
-  ///   case _:
-  ///     return orElse();
-  /// }
-  /// ```
+/// @nodoc
+abstract class _$$ChannelImplCopyWith<$Res> implements $ChannelCopyWith<$Res> {
+  factory _$$ChannelImplCopyWith(
+          _$ChannelImpl value, $Res Function(_$ChannelImpl) then) =
+      __$$ChannelImplCopyWithImpl<$Res>;
+  @override
+  @useResult
+  $Res call(
+      {ChannelId id,
+      String title,
+      String logoUrl,
+      String bannerUrl,
+      int? subscribersCount});
 
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>(
-    TResult Function(_Channel value)? $default, {
-    required TResult orElse(),
+  @override
+  $ChannelIdCopyWith<$Res> get id;
+}
+
+/// @nodoc
+class __$$ChannelImplCopyWithImpl<$Res>
+    extends _$ChannelCopyWithImpl<$Res, _$ChannelImpl>
+    implements _$$ChannelImplCopyWith<$Res> {
+  __$$ChannelImplCopyWithImpl(
+      _$ChannelImpl _value, $Res Function(_$ChannelImpl) _then)
+      : super(_value, _then);
+
+  /// Create a copy of Channel
+  /// with the given fields replaced by the non-null parameter values.
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? id = null,
+    Object? title = null,
+    Object? logoUrl = null,
+    Object? bannerUrl = null,
+    Object? subscribersCount = freezed,
   }) {
-    final _that = this;
-    switch (_that) {
-      case _Channel() when $default != null:
-        return $default(_that);
-      case _:
-        return orElse();
-    }
-  }
-
-  /// A `switch`-like method, using callbacks.
-  ///
-  /// Callbacks receives the raw object, upcasted.
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case final Subclass value:
-  ///     return ...;
-  ///   case final Subclass2 value:
-  ///     return ...;
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>(
-    TResult Function(_Channel value) $default,
-  ) {
-    final _that = this;
-    switch (_that) {
-      case _Channel():
-        return $default(_that);
-      case _:
-        throw StateError('Unexpected subclass');
-    }
-  }
-
-  /// A variant of `map` that fallback to returning `null`.
-  ///
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case final Subclass value:
-  ///     return ...;
-  ///   case _:
-  ///     return null;
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>(
-    TResult? Function(_Channel value)? $default,
-  ) {
-    final _that = this;
-    switch (_that) {
-      case _Channel() when $default != null:
-        return $default(_that);
-      case _:
-        return null;
-    }
-  }
-
-  /// A variant of `when` that fallback to an `orElse` callback.
-  ///
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case Subclass(:final field):
-  ///     return ...;
-  ///   case _:
-  ///     return orElse();
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>(
-    TResult Function(ChannelId id, String title, String logoUrl,
-            String bannerUrl, int? subscribersCount)?
-        $default, {
-    required TResult orElse(),
-  }) {
-    final _that = this;
-    switch (_that) {
-      case _Channel() when $default != null:
-        return $default(_that.id, _that.title, _that.logoUrl, _that.bannerUrl,
-            _that.subscribersCount);
-      case _:
-        return orElse();
-    }
-  }
-
-  /// A `switch`-like method, using callbacks.
-  ///
-  /// As opposed to `map`, this offers destructuring.
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case Subclass(:final field):
-  ///     return ...;
-  ///   case Subclass2(:final field2):
-  ///     return ...;
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>(
-    TResult Function(ChannelId id, String title, String logoUrl,
-            String bannerUrl, int? subscribersCount)
-        $default,
-  ) {
-    final _that = this;
-    switch (_that) {
-      case _Channel():
-        return $default(_that.id, _that.title, _that.logoUrl, _that.bannerUrl,
-            _that.subscribersCount);
-      case _:
-        throw StateError('Unexpected subclass');
-    }
-  }
-
-  /// A variant of `when` that fallback to returning `null`
-  ///
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case Subclass(:final field):
-  ///     return ...;
-  ///   case _:
-  ///     return null;
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>(
-    TResult? Function(ChannelId id, String title, String logoUrl,
-            String bannerUrl, int? subscribersCount)?
-        $default,
-  ) {
-    final _that = this;
-    switch (_that) {
-      case _Channel() when $default != null:
-        return $default(_that.id, _that.title, _that.logoUrl, _that.bannerUrl,
-            _that.subscribersCount);
-      case _:
-        return null;
-    }
+    return _then(_$ChannelImpl(
+      null == id
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as ChannelId,
+      null == title
+          ? _value.title
+          : title // ignore: cast_nullable_to_non_nullable
+              as String,
+      null == logoUrl
+          ? _value.logoUrl
+          : logoUrl // ignore: cast_nullable_to_non_nullable
+              as String,
+      null == bannerUrl
+          ? _value.bannerUrl
+          : bannerUrl // ignore: cast_nullable_to_non_nullable
+              as String,
+      freezed == subscribersCount
+          ? _value.subscribersCount
+          : subscribersCount // ignore: cast_nullable_to_non_nullable
+              as int?,
+    ));
   }
 }
 
 /// @nodoc
 
-class _Channel extends Channel {
-  const _Channel(
+class _$ChannelImpl extends _Channel {
+  const _$ChannelImpl(
       this.id, this.title, this.logoUrl, this.bannerUrl, this.subscribersCount)
       : super._();
 
@@ -321,19 +197,16 @@ class _Channel extends Channel {
   @override
   final int? subscribersCount;
 
-  /// Create a copy of Channel
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @pragma('vm:prefer-inline')
-  _$ChannelCopyWith<_Channel> get copyWith =>
-      __$ChannelCopyWithImpl<_Channel>(this, _$identity);
+  String toString() {
+    return 'Channel(id: $id, title: $title, logoUrl: $logoUrl, bannerUrl: $bannerUrl, subscribersCount: $subscribersCount)';
+  }
 
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _Channel &&
+            other is _$ChannelImpl &&
             (identical(other.id, id) || other.id == id) &&
             (identical(other.title, title) || other.title == title) &&
             (identical(other.logoUrl, logoUrl) || other.logoUrl == logoUrl) &&
@@ -347,80 +220,48 @@ class _Channel extends Channel {
   int get hashCode =>
       Object.hash(runtimeType, id, title, logoUrl, bannerUrl, subscribersCount);
 
+  /// Create a copy of Channel
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
-  String toString() {
-    return 'Channel(id: $id, title: $title, logoUrl: $logoUrl, bannerUrl: $bannerUrl, subscribersCount: $subscribersCount)';
-  }
+  @pragma('vm:prefer-inline')
+  _$$ChannelImplCopyWith<_$ChannelImpl> get copyWith =>
+      __$$ChannelImplCopyWithImpl<_$ChannelImpl>(this, _$identity);
 }
 
-/// @nodoc
-abstract mixin class _$ChannelCopyWith<$Res> implements $ChannelCopyWith<$Res> {
-  factory _$ChannelCopyWith(_Channel value, $Res Function(_Channel) _then) =
-      __$ChannelCopyWithImpl;
+abstract class _Channel extends Channel {
+  const factory _Channel(
+      final ChannelId id,
+      final String title,
+      final String logoUrl,
+      final String bannerUrl,
+      final int? subscribersCount) = _$ChannelImpl;
+  const _Channel._() : super._();
+
+  /// Channel ID.
   @override
-  @useResult
-  $Res call(
-      {ChannelId id,
-      String title,
-      String logoUrl,
-      String bannerUrl,
-      int? subscribersCount});
+  ChannelId get id;
 
+  /// Channel title.
   @override
-  $ChannelIdCopyWith<$Res> get id;
-}
+  String get title;
 
-/// @nodoc
-class __$ChannelCopyWithImpl<$Res> implements _$ChannelCopyWith<$Res> {
-  __$ChannelCopyWithImpl(this._self, this._then);
+  /// URL of the channel's logo image.
+  @override
+  String get logoUrl;
 
-  final _Channel _self;
-  final $Res Function(_Channel) _then;
+  /// URL of the channel's banner image.
+  @override
+  String get bannerUrl;
+
+  /// The (approximate) channel subscriber's count.
+  @override
+  int? get subscribersCount;
 
   /// Create a copy of Channel
   /// with the given fields replaced by the non-null parameter values.
   @override
-  @pragma('vm:prefer-inline')
-  $Res call({
-    Object? id = null,
-    Object? title = null,
-    Object? logoUrl = null,
-    Object? bannerUrl = null,
-    Object? subscribersCount = freezed,
-  }) {
-    return _then(_Channel(
-      null == id
-          ? _self.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as ChannelId,
-      null == title
-          ? _self.title
-          : title // ignore: cast_nullable_to_non_nullable
-              as String,
-      null == logoUrl
-          ? _self.logoUrl
-          : logoUrl // ignore: cast_nullable_to_non_nullable
-              as String,
-      null == bannerUrl
-          ? _self.bannerUrl
-          : bannerUrl // ignore: cast_nullable_to_non_nullable
-              as String,
-      freezed == subscribersCount
-          ? _self.subscribersCount
-          : subscribersCount // ignore: cast_nullable_to_non_nullable
-              as int?,
-    ));
-  }
-
-  /// Create a copy of Channel
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $ChannelIdCopyWith<$Res> get id {
-    return $ChannelIdCopyWith<$Res>(_self.id, (value) {
-      return _then(_self.copyWith(id: value));
-    });
-  }
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  _$$ChannelImplCopyWith<_$ChannelImpl> get copyWith =>
+      throw _privateConstructorUsedError;
 }
-
-// dart format on

@@ -1,5 +1,5 @@
-// GENERATED CODE - DO NOT MODIFY BY HAND
 // coverage:ignore-file
+// GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
@@ -9,54 +9,37 @@ part of 'channel_link.dart';
 // FreezedGenerator
 // **************************************************************************
 
-// dart format off
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$ChannelLink {
   /// Link title.
-  String get title;
+  String get title => throw _privateConstructorUsedError;
 
   /// Link URL.
   /// Already decoded with the YouTube shortener already taken out.
-  Uri get url;
+  Uri get url => throw _privateConstructorUsedError;
 
   /// Link Icon URL.
   @Deprecated(
       'As of at least 26-08-2023 YT no longer provides icons for links, so this URI is always empty')
-  Uri get icon;
+  Uri get icon => throw _privateConstructorUsedError;
 
   /// Create a copy of ChannelLink
   /// with the given fields replaced by the non-null parameter values.
   @JsonKey(includeFromJson: false, includeToJson: false)
-  @pragma('vm:prefer-inline')
   $ChannelLinkCopyWith<ChannelLink> get copyWith =>
-      _$ChannelLinkCopyWithImpl<ChannelLink>(this as ChannelLink, _$identity);
-
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is ChannelLink &&
-            (identical(other.title, title) || other.title == title) &&
-            (identical(other.url, url) || other.url == url) &&
-            (identical(other.icon, icon) || other.icon == icon));
-  }
-
-  @override
-  int get hashCode => Object.hash(runtimeType, title, url, icon);
-
-  @override
-  String toString() {
-    return 'ChannelLink(title: $title, url: $url, icon: $icon)';
-  }
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract mixin class $ChannelLinkCopyWith<$Res> {
+abstract class $ChannelLinkCopyWith<$Res> {
   factory $ChannelLinkCopyWith(
-          ChannelLink value, $Res Function(ChannelLink) _then) =
-      _$ChannelLinkCopyWithImpl;
+          ChannelLink value, $Res Function(ChannelLink) then) =
+      _$ChannelLinkCopyWithImpl<$Res, ChannelLink>;
   @useResult
   $Res call(
       {String title,
@@ -67,11 +50,14 @@ abstract mixin class $ChannelLinkCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$ChannelLinkCopyWithImpl<$Res> implements $ChannelLinkCopyWith<$Res> {
-  _$ChannelLinkCopyWithImpl(this._self, this._then);
+class _$ChannelLinkCopyWithImpl<$Res, $Val extends ChannelLink>
+    implements $ChannelLinkCopyWith<$Res> {
+  _$ChannelLinkCopyWithImpl(this._value, this._then);
 
-  final ChannelLink _self;
-  final $Res Function(ChannelLink) _then;
+  // ignore: unused_field
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
   /// Create a copy of ChannelLink
   /// with the given fields replaced by the non-null parameter values.
@@ -82,202 +68,77 @@ class _$ChannelLinkCopyWithImpl<$Res> implements $ChannelLinkCopyWith<$Res> {
     Object? url = null,
     Object? icon = null,
   }) {
-    return _then(_self.copyWith(
+    return _then(_value.copyWith(
       title: null == title
-          ? _self.title
+          ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
               as String,
       url: null == url
-          ? _self.url
+          ? _value.url
           : url // ignore: cast_nullable_to_non_nullable
               as Uri,
       icon: null == icon
-          ? _self.icon
+          ? _value.icon
+          : icon // ignore: cast_nullable_to_non_nullable
+              as Uri,
+    ) as $Val);
+  }
+}
+
+/// @nodoc
+abstract class _$$ChannelLinkImplCopyWith<$Res>
+    implements $ChannelLinkCopyWith<$Res> {
+  factory _$$ChannelLinkImplCopyWith(
+          _$ChannelLinkImpl value, $Res Function(_$ChannelLinkImpl) then) =
+      __$$ChannelLinkImplCopyWithImpl<$Res>;
+  @override
+  @useResult
+  $Res call(
+      {String title,
+      Uri url,
+      @Deprecated(
+          'As of at least 26-08-2023 YT no longer provides icons for links, so this URI is always empty')
+      Uri icon});
+}
+
+/// @nodoc
+class __$$ChannelLinkImplCopyWithImpl<$Res>
+    extends _$ChannelLinkCopyWithImpl<$Res, _$ChannelLinkImpl>
+    implements _$$ChannelLinkImplCopyWith<$Res> {
+  __$$ChannelLinkImplCopyWithImpl(
+      _$ChannelLinkImpl _value, $Res Function(_$ChannelLinkImpl) _then)
+      : super(_value, _then);
+
+  /// Create a copy of ChannelLink
+  /// with the given fields replaced by the non-null parameter values.
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? title = null,
+    Object? url = null,
+    Object? icon = null,
+  }) {
+    return _then(_$ChannelLinkImpl(
+      null == title
+          ? _value.title
+          : title // ignore: cast_nullable_to_non_nullable
+              as String,
+      null == url
+          ? _value.url
+          : url // ignore: cast_nullable_to_non_nullable
+              as Uri,
+      null == icon
+          ? _value.icon
           : icon // ignore: cast_nullable_to_non_nullable
               as Uri,
     ));
   }
 }
 
-/// Adds pattern-matching-related methods to [ChannelLink].
-extension ChannelLinkPatterns on ChannelLink {
-  /// A variant of `map` that fallback to returning `orElse`.
-  ///
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case final Subclass value:
-  ///     return ...;
-  ///   case _:
-  ///     return orElse();
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>(
-    TResult Function(_ChannelLink value)? $default, {
-    required TResult orElse(),
-  }) {
-    final _that = this;
-    switch (_that) {
-      case _ChannelLink() when $default != null:
-        return $default(_that);
-      case _:
-        return orElse();
-    }
-  }
-
-  /// A `switch`-like method, using callbacks.
-  ///
-  /// Callbacks receives the raw object, upcasted.
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case final Subclass value:
-  ///     return ...;
-  ///   case final Subclass2 value:
-  ///     return ...;
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>(
-    TResult Function(_ChannelLink value) $default,
-  ) {
-    final _that = this;
-    switch (_that) {
-      case _ChannelLink():
-        return $default(_that);
-      case _:
-        throw StateError('Unexpected subclass');
-    }
-  }
-
-  /// A variant of `map` that fallback to returning `null`.
-  ///
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case final Subclass value:
-  ///     return ...;
-  ///   case _:
-  ///     return null;
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>(
-    TResult? Function(_ChannelLink value)? $default,
-  ) {
-    final _that = this;
-    switch (_that) {
-      case _ChannelLink() when $default != null:
-        return $default(_that);
-      case _:
-        return null;
-    }
-  }
-
-  /// A variant of `when` that fallback to an `orElse` callback.
-  ///
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case Subclass(:final field):
-  ///     return ...;
-  ///   case _:
-  ///     return orElse();
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>(
-    TResult Function(
-            String title,
-            Uri url,
-            @Deprecated(
-                'As of at least 26-08-2023 YT no longer provides icons for links, so this URI is always empty')
-            Uri icon)?
-        $default, {
-    required TResult orElse(),
-  }) {
-    final _that = this;
-    switch (_that) {
-      case _ChannelLink() when $default != null:
-        return $default(_that.title, _that.url, _that.icon);
-      case _:
-        return orElse();
-    }
-  }
-
-  /// A `switch`-like method, using callbacks.
-  ///
-  /// As opposed to `map`, this offers destructuring.
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case Subclass(:final field):
-  ///     return ...;
-  ///   case Subclass2(:final field2):
-  ///     return ...;
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>(
-    TResult Function(
-            String title,
-            Uri url,
-            @Deprecated(
-                'As of at least 26-08-2023 YT no longer provides icons for links, so this URI is always empty')
-            Uri icon)
-        $default,
-  ) {
-    final _that = this;
-    switch (_that) {
-      case _ChannelLink():
-        return $default(_that.title, _that.url, _that.icon);
-      case _:
-        throw StateError('Unexpected subclass');
-    }
-  }
-
-  /// A variant of `when` that fallback to returning `null`
-  ///
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case Subclass(:final field):
-  ///     return ...;
-  ///   case _:
-  ///     return null;
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>(
-    TResult? Function(
-            String title,
-            Uri url,
-            @Deprecated(
-                'As of at least 26-08-2023 YT no longer provides icons for links, so this URI is always empty')
-            Uri icon)?
-        $default,
-  ) {
-    final _that = this;
-    switch (_that) {
-      case _ChannelLink() when $default != null:
-        return $default(_that.title, _that.url, _that.icon);
-      case _:
-        return null;
-    }
-  }
-}
-
 /// @nodoc
 
-class _ChannelLink implements ChannelLink {
-  const _ChannelLink(
+class _$ChannelLinkImpl implements _ChannelLink {
+  const _$ChannelLinkImpl(
       this.title,
       this.url,
       @Deprecated(
@@ -299,19 +160,16 @@ class _ChannelLink implements ChannelLink {
       'As of at least 26-08-2023 YT no longer provides icons for links, so this URI is always empty')
   final Uri icon;
 
-  /// Create a copy of ChannelLink
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @pragma('vm:prefer-inline')
-  _$ChannelLinkCopyWith<_ChannelLink> get copyWith =>
-      __$ChannelLinkCopyWithImpl<_ChannelLink>(this, _$identity);
+  String toString() {
+    return 'ChannelLink(title: $title, url: $url, icon: $icon)';
+  }
 
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _ChannelLink &&
+            other is _$ChannelLinkImpl &&
             (identical(other.title, title) || other.title == title) &&
             (identical(other.url, url) || other.url == url) &&
             (identical(other.icon, icon) || other.icon == icon));
@@ -320,59 +178,42 @@ class _ChannelLink implements ChannelLink {
   @override
   int get hashCode => Object.hash(runtimeType, title, url, icon);
 
+  /// Create a copy of ChannelLink
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
-  String toString() {
-    return 'ChannelLink(title: $title, url: $url, icon: $icon)';
-  }
+  @pragma('vm:prefer-inline')
+  _$$ChannelLinkImplCopyWith<_$ChannelLinkImpl> get copyWith =>
+      __$$ChannelLinkImplCopyWithImpl<_$ChannelLinkImpl>(this, _$identity);
 }
 
-/// @nodoc
-abstract mixin class _$ChannelLinkCopyWith<$Res>
-    implements $ChannelLinkCopyWith<$Res> {
-  factory _$ChannelLinkCopyWith(
-          _ChannelLink value, $Res Function(_ChannelLink) _then) =
-      __$ChannelLinkCopyWithImpl;
-  @override
-  @useResult
-  $Res call(
-      {String title,
-      Uri url,
+abstract class _ChannelLink implements ChannelLink {
+  const factory _ChannelLink(
+      final String title,
+      final Uri url,
       @Deprecated(
           'As of at least 26-08-2023 YT no longer provides icons for links, so this URI is always empty')
-      Uri icon});
-}
+      final Uri icon) = _$ChannelLinkImpl;
 
-/// @nodoc
-class __$ChannelLinkCopyWithImpl<$Res> implements _$ChannelLinkCopyWith<$Res> {
-  __$ChannelLinkCopyWithImpl(this._self, this._then);
+  /// Link title.
+  @override
+  String get title;
 
-  final _ChannelLink _self;
-  final $Res Function(_ChannelLink) _then;
+  /// Link URL.
+  /// Already decoded with the YouTube shortener already taken out.
+  @override
+  Uri get url;
+
+  /// Link Icon URL.
+  @override
+  @Deprecated(
+      'As of at least 26-08-2023 YT no longer provides icons for links, so this URI is always empty')
+  Uri get icon;
 
   /// Create a copy of ChannelLink
   /// with the given fields replaced by the non-null parameter values.
   @override
-  @pragma('vm:prefer-inline')
-  $Res call({
-    Object? title = null,
-    Object? url = null,
-    Object? icon = null,
-  }) {
-    return _then(_ChannelLink(
-      null == title
-          ? _self.title
-          : title // ignore: cast_nullable_to_non_nullable
-              as String,
-      null == url
-          ? _self.url
-          : url // ignore: cast_nullable_to_non_nullable
-              as Uri,
-      null == icon
-          ? _self.icon
-          : icon // ignore: cast_nullable_to_non_nullable
-              as Uri,
-    ));
-  }
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  _$$ChannelLinkImplCopyWith<_$ChannelLinkImpl> get copyWith =>
+      throw _privateConstructorUsedError;
 }
-
-// dart format on

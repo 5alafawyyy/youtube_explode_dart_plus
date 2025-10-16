@@ -8,12 +8,14 @@ part of 'stream_container.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_StreamContainer _$StreamContainerFromJson(Map<String, dynamic> json) =>
-    _StreamContainer(
+_$StreamContainerImpl _$$StreamContainerImplFromJson(
+        Map<String, dynamic> json) =>
+    _$StreamContainerImpl(
       json['name'] as String,
     );
 
-Map<String, dynamic> _$StreamContainerToJson(_StreamContainer instance) =>
+Map<String, dynamic> _$$StreamContainerImplToJson(
+        _$StreamContainerImpl instance) =>
     <String, dynamic>{
       'name': instance.name,
     };

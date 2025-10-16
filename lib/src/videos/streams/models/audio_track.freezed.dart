@@ -1,5 +1,5 @@
-// GENERATED CODE - DO NOT MODIFY BY HAND
 // coverage:ignore-file
+// GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
@@ -9,62 +9,49 @@ part of 'audio_track.dart';
 // FreezedGenerator
 // **************************************************************************
 
-// dart format off
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
+
+AudioTrack _$AudioTrackFromJson(Map<String, dynamic> json) {
+  return _AudioTrack.fromJson(json);
+}
 
 /// @nodoc
 mixin _$AudioTrack {
-  String get displayName;
-  String get id;
-  bool get audioIsDefault;
+  String get displayName => throw _privateConstructorUsedError;
+  String get id => throw _privateConstructorUsedError;
+  bool get audioIsDefault => throw _privateConstructorUsedError;
+
+  /// Serializes this AudioTrack to a JSON map.
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
 
   /// Create a copy of AudioTrack
   /// with the given fields replaced by the non-null parameter values.
   @JsonKey(includeFromJson: false, includeToJson: false)
-  @pragma('vm:prefer-inline')
   $AudioTrackCopyWith<AudioTrack> get copyWith =>
-      _$AudioTrackCopyWithImpl<AudioTrack>(this as AudioTrack, _$identity);
-
-  /// Serializes this AudioTrack to a JSON map.
-  Map<String, dynamic> toJson();
-
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is AudioTrack &&
-            (identical(other.displayName, displayName) ||
-                other.displayName == displayName) &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.audioIsDefault, audioIsDefault) ||
-                other.audioIsDefault == audioIsDefault));
-  }
-
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(runtimeType, displayName, id, audioIsDefault);
-
-  @override
-  String toString() {
-    return 'AudioTrack(displayName: $displayName, id: $id, audioIsDefault: $audioIsDefault)';
-  }
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract mixin class $AudioTrackCopyWith<$Res> {
+abstract class $AudioTrackCopyWith<$Res> {
   factory $AudioTrackCopyWith(
-          AudioTrack value, $Res Function(AudioTrack) _then) =
-      _$AudioTrackCopyWithImpl;
+          AudioTrack value, $Res Function(AudioTrack) then) =
+      _$AudioTrackCopyWithImpl<$Res, AudioTrack>;
   @useResult
   $Res call({String displayName, String id, bool audioIsDefault});
 }
 
 /// @nodoc
-class _$AudioTrackCopyWithImpl<$Res> implements $AudioTrackCopyWith<$Res> {
-  _$AudioTrackCopyWithImpl(this._self, this._then);
+class _$AudioTrackCopyWithImpl<$Res, $Val extends AudioTrack>
+    implements $AudioTrackCopyWith<$Res> {
+  _$AudioTrackCopyWithImpl(this._value, this._then);
 
-  final AudioTrack _self;
-  final $Res Function(AudioTrack) _then;
+  // ignore: unused_field
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
   /// Create a copy of AudioTrack
   /// with the given fields replaced by the non-null parameter values.
@@ -75,192 +62,78 @@ class _$AudioTrackCopyWithImpl<$Res> implements $AudioTrackCopyWith<$Res> {
     Object? id = null,
     Object? audioIsDefault = null,
   }) {
-    return _then(_self.copyWith(
+    return _then(_value.copyWith(
       displayName: null == displayName
-          ? _self.displayName
+          ? _value.displayName
           : displayName // ignore: cast_nullable_to_non_nullable
               as String,
       id: null == id
-          ? _self.id
+          ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as String,
       audioIsDefault: null == audioIsDefault
-          ? _self.audioIsDefault
+          ? _value.audioIsDefault
+          : audioIsDefault // ignore: cast_nullable_to_non_nullable
+              as bool,
+    ) as $Val);
+  }
+}
+
+/// @nodoc
+abstract class _$$AudioTrackImplCopyWith<$Res>
+    implements $AudioTrackCopyWith<$Res> {
+  factory _$$AudioTrackImplCopyWith(
+          _$AudioTrackImpl value, $Res Function(_$AudioTrackImpl) then) =
+      __$$AudioTrackImplCopyWithImpl<$Res>;
+  @override
+  @useResult
+  $Res call({String displayName, String id, bool audioIsDefault});
+}
+
+/// @nodoc
+class __$$AudioTrackImplCopyWithImpl<$Res>
+    extends _$AudioTrackCopyWithImpl<$Res, _$AudioTrackImpl>
+    implements _$$AudioTrackImplCopyWith<$Res> {
+  __$$AudioTrackImplCopyWithImpl(
+      _$AudioTrackImpl _value, $Res Function(_$AudioTrackImpl) _then)
+      : super(_value, _then);
+
+  /// Create a copy of AudioTrack
+  /// with the given fields replaced by the non-null parameter values.
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? displayName = null,
+    Object? id = null,
+    Object? audioIsDefault = null,
+  }) {
+    return _then(_$AudioTrackImpl(
+      displayName: null == displayName
+          ? _value.displayName
+          : displayName // ignore: cast_nullable_to_non_nullable
+              as String,
+      id: null == id
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as String,
+      audioIsDefault: null == audioIsDefault
+          ? _value.audioIsDefault
           : audioIsDefault // ignore: cast_nullable_to_non_nullable
               as bool,
     ));
   }
 }
 
-/// Adds pattern-matching-related methods to [AudioTrack].
-extension AudioTrackPatterns on AudioTrack {
-  /// A variant of `map` that fallback to returning `orElse`.
-  ///
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case final Subclass value:
-  ///     return ...;
-  ///   case _:
-  ///     return orElse();
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>(
-    TResult Function(_AudioTrack value)? $default, {
-    required TResult orElse(),
-  }) {
-    final _that = this;
-    switch (_that) {
-      case _AudioTrack() when $default != null:
-        return $default(_that);
-      case _:
-        return orElse();
-    }
-  }
-
-  /// A `switch`-like method, using callbacks.
-  ///
-  /// Callbacks receives the raw object, upcasted.
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case final Subclass value:
-  ///     return ...;
-  ///   case final Subclass2 value:
-  ///     return ...;
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>(
-    TResult Function(_AudioTrack value) $default,
-  ) {
-    final _that = this;
-    switch (_that) {
-      case _AudioTrack():
-        return $default(_that);
-      case _:
-        throw StateError('Unexpected subclass');
-    }
-  }
-
-  /// A variant of `map` that fallback to returning `null`.
-  ///
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case final Subclass value:
-  ///     return ...;
-  ///   case _:
-  ///     return null;
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>(
-    TResult? Function(_AudioTrack value)? $default,
-  ) {
-    final _that = this;
-    switch (_that) {
-      case _AudioTrack() when $default != null:
-        return $default(_that);
-      case _:
-        return null;
-    }
-  }
-
-  /// A variant of `when` that fallback to an `orElse` callback.
-  ///
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case Subclass(:final field):
-  ///     return ...;
-  ///   case _:
-  ///     return orElse();
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>(
-    TResult Function(String displayName, String id, bool audioIsDefault)?
-        $default, {
-    required TResult orElse(),
-  }) {
-    final _that = this;
-    switch (_that) {
-      case _AudioTrack() when $default != null:
-        return $default(_that.displayName, _that.id, _that.audioIsDefault);
-      case _:
-        return orElse();
-    }
-  }
-
-  /// A `switch`-like method, using callbacks.
-  ///
-  /// As opposed to `map`, this offers destructuring.
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case Subclass(:final field):
-  ///     return ...;
-  ///   case Subclass2(:final field2):
-  ///     return ...;
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>(
-    TResult Function(String displayName, String id, bool audioIsDefault)
-        $default,
-  ) {
-    final _that = this;
-    switch (_that) {
-      case _AudioTrack():
-        return $default(_that.displayName, _that.id, _that.audioIsDefault);
-      case _:
-        throw StateError('Unexpected subclass');
-    }
-  }
-
-  /// A variant of `when` that fallback to returning `null`
-  ///
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case Subclass(:final field):
-  ///     return ...;
-  ///   case _:
-  ///     return null;
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>(
-    TResult? Function(String displayName, String id, bool audioIsDefault)?
-        $default,
-  ) {
-    final _that = this;
-    switch (_that) {
-      case _AudioTrack() when $default != null:
-        return $default(_that.displayName, _that.id, _that.audioIsDefault);
-      case _:
-        return null;
-    }
-  }
-}
-
 /// @nodoc
 @JsonSerializable()
-class _AudioTrack implements AudioTrack {
-  const _AudioTrack(
+class _$AudioTrackImpl implements _AudioTrack {
+  const _$AudioTrackImpl(
       {required this.displayName,
       required this.id,
       required this.audioIsDefault});
-  factory _AudioTrack.fromJson(Map<String, dynamic> json) =>
-      _$AudioTrackFromJson(json);
+
+  factory _$AudioTrackImpl.fromJson(Map<String, dynamic> json) =>
+      _$$AudioTrackImplFromJson(json);
 
   @override
   final String displayName;
@@ -269,26 +142,16 @@ class _AudioTrack implements AudioTrack {
   @override
   final bool audioIsDefault;
 
-  /// Create a copy of AudioTrack
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @pragma('vm:prefer-inline')
-  _$AudioTrackCopyWith<_AudioTrack> get copyWith =>
-      __$AudioTrackCopyWithImpl<_AudioTrack>(this, _$identity);
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$AudioTrackToJson(
-      this,
-    );
+  String toString() {
+    return 'AudioTrack(displayName: $displayName, id: $id, audioIsDefault: $audioIsDefault)';
   }
 
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _AudioTrack &&
+            other is _$AudioTrackImpl &&
             (identical(other.displayName, displayName) ||
                 other.displayName == displayName) &&
             (identical(other.id, id) || other.id == id) &&
@@ -300,54 +163,42 @@ class _AudioTrack implements AudioTrack {
   @override
   int get hashCode => Object.hash(runtimeType, displayName, id, audioIsDefault);
 
+  /// Create a copy of AudioTrack
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
-  String toString() {
-    return 'AudioTrack(displayName: $displayName, id: $id, audioIsDefault: $audioIsDefault)';
+  @pragma('vm:prefer-inline')
+  _$$AudioTrackImplCopyWith<_$AudioTrackImpl> get copyWith =>
+      __$$AudioTrackImplCopyWithImpl<_$AudioTrackImpl>(this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$$AudioTrackImplToJson(
+      this,
+    );
   }
 }
 
-/// @nodoc
-abstract mixin class _$AudioTrackCopyWith<$Res>
-    implements $AudioTrackCopyWith<$Res> {
-  factory _$AudioTrackCopyWith(
-          _AudioTrack value, $Res Function(_AudioTrack) _then) =
-      __$AudioTrackCopyWithImpl;
+abstract class _AudioTrack implements AudioTrack {
+  const factory _AudioTrack(
+      {required final String displayName,
+      required final String id,
+      required final bool audioIsDefault}) = _$AudioTrackImpl;
+
+  factory _AudioTrack.fromJson(Map<String, dynamic> json) =
+      _$AudioTrackImpl.fromJson;
+
   @override
-  @useResult
-  $Res call({String displayName, String id, bool audioIsDefault});
-}
-
-/// @nodoc
-class __$AudioTrackCopyWithImpl<$Res> implements _$AudioTrackCopyWith<$Res> {
-  __$AudioTrackCopyWithImpl(this._self, this._then);
-
-  final _AudioTrack _self;
-  final $Res Function(_AudioTrack) _then;
+  String get displayName;
+  @override
+  String get id;
+  @override
+  bool get audioIsDefault;
 
   /// Create a copy of AudioTrack
   /// with the given fields replaced by the non-null parameter values.
   @override
-  @pragma('vm:prefer-inline')
-  $Res call({
-    Object? displayName = null,
-    Object? id = null,
-    Object? audioIsDefault = null,
-  }) {
-    return _then(_AudioTrack(
-      displayName: null == displayName
-          ? _self.displayName
-          : displayName // ignore: cast_nullable_to_non_nullable
-              as String,
-      id: null == id
-          ? _self.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as String,
-      audioIsDefault: null == audioIsDefault
-          ? _self.audioIsDefault
-          : audioIsDefault // ignore: cast_nullable_to_non_nullable
-              as bool,
-    ));
-  }
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  _$$AudioTrackImplCopyWith<_$AudioTrackImpl> get copyWith =>
+      throw _privateConstructorUsedError;
 }
-
-// dart format on

@@ -7,7 +7,7 @@ part 'channel_handle.freezed.dart';
 /// Encapsulates a valid YouTube channel handle,
 /// including the starting @ (at).
 @freezed
-abstract class ChannelHandle with _$ChannelHandle {
+class ChannelHandle with _$ChannelHandle {
   /// Initializes an instance of [ChannelHandle].
   factory ChannelHandle(String urlOrChannelHandle) {
     final channelHandle = parseChannelHandle(urlOrChannelHandle);
@@ -57,9 +57,9 @@ abstract class ChannelHandle with _$ChannelHandle {
       return handleOrUrl;
     }
 
-    final regMatch = RegExp(r'youtube\..+?/(@.*?)(?:\?|&|/|$)')
-        .firstMatch(handleOrUrl)
-        ?.group(1);
+    final regMatch = RegExp(
+      r'youtube\..+?/(@.*?)(?:\?|&|/|$)',
+    ).firstMatch(handleOrUrl)?.group(1);
     if (!regMatch.isNullOrWhiteSpace && validateChannelHandle(regMatch!)) {
       return regMatch;
     }

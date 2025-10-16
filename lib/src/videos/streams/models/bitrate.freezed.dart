@@ -1,5 +1,5 @@
-// GENERATED CODE - DO NOT MODIFY BY HAND
 // coverage:ignore-file
+// GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
@@ -9,52 +9,46 @@ part of 'bitrate.dart';
 // FreezedGenerator
 // **************************************************************************
 
-// dart format off
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
+
+Bitrate _$BitrateFromJson(Map<String, dynamic> json) {
+  return _Bitrate.fromJson(json);
+}
 
 /// @nodoc
 mixin _$Bitrate {
   /// Bits per second.
-  int get bitsPerSecond;
+  int get bitsPerSecond => throw _privateConstructorUsedError;
+
+  /// Serializes this Bitrate to a JSON map.
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
 
   /// Create a copy of Bitrate
   /// with the given fields replaced by the non-null parameter values.
   @JsonKey(includeFromJson: false, includeToJson: false)
-  @pragma('vm:prefer-inline')
-  $BitrateCopyWith<Bitrate> get copyWith =>
-      _$BitrateCopyWithImpl<Bitrate>(this as Bitrate, _$identity);
-
-  /// Serializes this Bitrate to a JSON map.
-  Map<String, dynamic> toJson();
-
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is Bitrate &&
-            (identical(other.bitsPerSecond, bitsPerSecond) ||
-                other.bitsPerSecond == bitsPerSecond));
-  }
-
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(runtimeType, bitsPerSecond);
+  $BitrateCopyWith<Bitrate> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract mixin class $BitrateCopyWith<$Res> {
-  factory $BitrateCopyWith(Bitrate value, $Res Function(Bitrate) _then) =
-      _$BitrateCopyWithImpl;
+abstract class $BitrateCopyWith<$Res> {
+  factory $BitrateCopyWith(Bitrate value, $Res Function(Bitrate) then) =
+      _$BitrateCopyWithImpl<$Res, Bitrate>;
   @useResult
   $Res call({int bitsPerSecond});
 }
 
 /// @nodoc
-class _$BitrateCopyWithImpl<$Res> implements $BitrateCopyWith<$Res> {
-  _$BitrateCopyWithImpl(this._self, this._then);
+class _$BitrateCopyWithImpl<$Res, $Val extends Bitrate>
+    implements $BitrateCopyWith<$Res> {
+  _$BitrateCopyWithImpl(this._value, this._then);
 
-  final Bitrate _self;
-  final $Res Function(Bitrate) _then;
+  // ignore: unused_field
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
   /// Create a copy of Bitrate
   /// with the given fields replaced by the non-null parameter values.
@@ -63,203 +57,66 @@ class _$BitrateCopyWithImpl<$Res> implements $BitrateCopyWith<$Res> {
   $Res call({
     Object? bitsPerSecond = null,
   }) {
-    return _then(_self.copyWith(
+    return _then(_value.copyWith(
       bitsPerSecond: null == bitsPerSecond
-          ? _self.bitsPerSecond
+          ? _value.bitsPerSecond
           : bitsPerSecond // ignore: cast_nullable_to_non_nullable
               as int,
-    ));
+    ) as $Val);
   }
 }
 
-/// Adds pattern-matching-related methods to [Bitrate].
-extension BitratePatterns on Bitrate {
-  /// A variant of `map` that fallback to returning `orElse`.
-  ///
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case final Subclass value:
-  ///     return ...;
-  ///   case _:
-  ///     return orElse();
-  /// }
-  /// ```
+/// @nodoc
+abstract class _$$BitrateImplCopyWith<$Res> implements $BitrateCopyWith<$Res> {
+  factory _$$BitrateImplCopyWith(
+          _$BitrateImpl value, $Res Function(_$BitrateImpl) then) =
+      __$$BitrateImplCopyWithImpl<$Res>;
+  @override
+  @useResult
+  $Res call({int bitsPerSecond});
+}
 
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>(
-    TResult Function(_Bitrate value)? $default, {
-    required TResult orElse(),
+/// @nodoc
+class __$$BitrateImplCopyWithImpl<$Res>
+    extends _$BitrateCopyWithImpl<$Res, _$BitrateImpl>
+    implements _$$BitrateImplCopyWith<$Res> {
+  __$$BitrateImplCopyWithImpl(
+      _$BitrateImpl _value, $Res Function(_$BitrateImpl) _then)
+      : super(_value, _then);
+
+  /// Create a copy of Bitrate
+  /// with the given fields replaced by the non-null parameter values.
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? bitsPerSecond = null,
   }) {
-    final _that = this;
-    switch (_that) {
-      case _Bitrate() when $default != null:
-        return $default(_that);
-      case _:
-        return orElse();
-    }
-  }
-
-  /// A `switch`-like method, using callbacks.
-  ///
-  /// Callbacks receives the raw object, upcasted.
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case final Subclass value:
-  ///     return ...;
-  ///   case final Subclass2 value:
-  ///     return ...;
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>(
-    TResult Function(_Bitrate value) $default,
-  ) {
-    final _that = this;
-    switch (_that) {
-      case _Bitrate():
-        return $default(_that);
-      case _:
-        throw StateError('Unexpected subclass');
-    }
-  }
-
-  /// A variant of `map` that fallback to returning `null`.
-  ///
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case final Subclass value:
-  ///     return ...;
-  ///   case _:
-  ///     return null;
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>(
-    TResult? Function(_Bitrate value)? $default,
-  ) {
-    final _that = this;
-    switch (_that) {
-      case _Bitrate() when $default != null:
-        return $default(_that);
-      case _:
-        return null;
-    }
-  }
-
-  /// A variant of `when` that fallback to an `orElse` callback.
-  ///
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case Subclass(:final field):
-  ///     return ...;
-  ///   case _:
-  ///     return orElse();
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>(
-    TResult Function(int bitsPerSecond)? $default, {
-    required TResult orElse(),
-  }) {
-    final _that = this;
-    switch (_that) {
-      case _Bitrate() when $default != null:
-        return $default(_that.bitsPerSecond);
-      case _:
-        return orElse();
-    }
-  }
-
-  /// A `switch`-like method, using callbacks.
-  ///
-  /// As opposed to `map`, this offers destructuring.
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case Subclass(:final field):
-  ///     return ...;
-  ///   case Subclass2(:final field2):
-  ///     return ...;
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>(
-    TResult Function(int bitsPerSecond) $default,
-  ) {
-    final _that = this;
-    switch (_that) {
-      case _Bitrate():
-        return $default(_that.bitsPerSecond);
-      case _:
-        throw StateError('Unexpected subclass');
-    }
-  }
-
-  /// A variant of `when` that fallback to returning `null`
-  ///
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case Subclass(:final field):
-  ///     return ...;
-  ///   case _:
-  ///     return null;
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>(
-    TResult? Function(int bitsPerSecond)? $default,
-  ) {
-    final _that = this;
-    switch (_that) {
-      case _Bitrate() when $default != null:
-        return $default(_that.bitsPerSecond);
-      case _:
-        return null;
-    }
+    return _then(_$BitrateImpl(
+      null == bitsPerSecond
+          ? _value.bitsPerSecond
+          : bitsPerSecond // ignore: cast_nullable_to_non_nullable
+              as int,
+    ));
   }
 }
 
 /// @nodoc
 @JsonSerializable()
-class _Bitrate extends Bitrate {
-  const _Bitrate(this.bitsPerSecond) : super._();
-  factory _Bitrate.fromJson(Map<String, dynamic> json) =>
-      _$BitrateFromJson(json);
+class _$BitrateImpl extends _Bitrate {
+  const _$BitrateImpl(this.bitsPerSecond) : super._();
+
+  factory _$BitrateImpl.fromJson(Map<String, dynamic> json) =>
+      _$$BitrateImplFromJson(json);
 
   /// Bits per second.
   @override
   final int bitsPerSecond;
 
-  /// Create a copy of Bitrate
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @pragma('vm:prefer-inline')
-  _$BitrateCopyWith<_Bitrate> get copyWith =>
-      __$BitrateCopyWithImpl<_Bitrate>(this, _$identity);
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$BitrateToJson(
-      this,
-    );
-  }
-
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _Bitrate &&
+            other is _$BitrateImpl &&
             (identical(other.bitsPerSecond, bitsPerSecond) ||
                 other.bitsPerSecond == bitsPerSecond));
   }
@@ -267,38 +124,37 @@ class _Bitrate extends Bitrate {
   @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, bitsPerSecond);
-}
 
-/// @nodoc
-abstract mixin class _$BitrateCopyWith<$Res> implements $BitrateCopyWith<$Res> {
-  factory _$BitrateCopyWith(_Bitrate value, $Res Function(_Bitrate) _then) =
-      __$BitrateCopyWithImpl;
+  /// Create a copy of Bitrate
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
-  @useResult
-  $Res call({int bitsPerSecond});
+  @pragma('vm:prefer-inline')
+  _$$BitrateImplCopyWith<_$BitrateImpl> get copyWith =>
+      __$$BitrateImplCopyWithImpl<_$BitrateImpl>(this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$$BitrateImplToJson(
+      this,
+    );
+  }
 }
 
-/// @nodoc
-class __$BitrateCopyWithImpl<$Res> implements _$BitrateCopyWith<$Res> {
-  __$BitrateCopyWithImpl(this._self, this._then);
+abstract class _Bitrate extends Bitrate {
+  const factory _Bitrate(final int bitsPerSecond) = _$BitrateImpl;
+  const _Bitrate._() : super._();
 
-  final _Bitrate _self;
-  final $Res Function(_Bitrate) _then;
+  factory _Bitrate.fromJson(Map<String, dynamic> json) = _$BitrateImpl.fromJson;
+
+  /// Bits per second.
+  @override
+  int get bitsPerSecond;
 
   /// Create a copy of Bitrate
   /// with the given fields replaced by the non-null parameter values.
   @override
-  @pragma('vm:prefer-inline')
-  $Res call({
-    Object? bitsPerSecond = null,
-  }) {
-    return _then(_Bitrate(
-      null == bitsPerSecond
-          ? _self.bitsPerSecond
-          : bitsPerSecond // ignore: cast_nullable_to_non_nullable
-              as int,
-    ));
-  }
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  _$$BitrateImplCopyWith<_$BitrateImpl> get copyWith =>
+      throw _privateConstructorUsedError;
 }
-
-// dart format on

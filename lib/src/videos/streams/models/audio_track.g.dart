@@ -8,13 +8,14 @@ part of 'audio_track.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_AudioTrack _$AudioTrackFromJson(Map<String, dynamic> json) => _AudioTrack(
+_$AudioTrackImpl _$$AudioTrackImplFromJson(Map<String, dynamic> json) =>
+    _$AudioTrackImpl(
       displayName: json['displayName'] as String,
       id: json['id'] as String,
       audioIsDefault: json['audioIsDefault'] as bool,
     );
 
-Map<String, dynamic> _$AudioTrackToJson(_AudioTrack instance) =>
+Map<String, dynamic> _$$AudioTrackImplToJson(_$AudioTrackImpl instance) =>
     <String, dynamic>{
       'displayName': instance.displayName,
       'id': instance.id,

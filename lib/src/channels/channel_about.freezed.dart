@@ -1,5 +1,5 @@
-// GENERATED CODE - DO NOT MODIFY BY HAND
 // coverage:ignore-file
+// GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
@@ -9,82 +9,47 @@ part of 'channel_about.dart';
 // FreezedGenerator
 // **************************************************************************
 
-// dart format off
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$ChannelAbout {
   /// Full channel description.
-  String? get description;
+  String? get description => throw _privateConstructorUsedError;
 
   /// Channel view count.
-  int? get viewCount;
+  int? get viewCount => throw _privateConstructorUsedError;
 
   /// Channel join date.
   /// Formatted as: Gen 01, 2000
-  String? get joinDate;
+  String? get joinDate => throw _privateConstructorUsedError;
 
   /// Channel title.
-  String get title;
+  String get title => throw _privateConstructorUsedError;
 
   /// Channel thumbnails.
-  List<Thumbnail> get thumbnails;
+  List<Thumbnail> get thumbnails => throw _privateConstructorUsedError;
 
   /// Channel country.
-  String? get country;
+  String? get country => throw _privateConstructorUsedError;
 
   /// Channel links.
-  List<ChannelLink> get channelLinks;
+  List<ChannelLink> get channelLinks => throw _privateConstructorUsedError;
 
   /// Create a copy of ChannelAbout
   /// with the given fields replaced by the non-null parameter values.
   @JsonKey(includeFromJson: false, includeToJson: false)
-  @pragma('vm:prefer-inline')
   $ChannelAboutCopyWith<ChannelAbout> get copyWith =>
-      _$ChannelAboutCopyWithImpl<ChannelAbout>(
-          this as ChannelAbout, _$identity);
-
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is ChannelAbout &&
-            (identical(other.description, description) ||
-                other.description == description) &&
-            (identical(other.viewCount, viewCount) ||
-                other.viewCount == viewCount) &&
-            (identical(other.joinDate, joinDate) ||
-                other.joinDate == joinDate) &&
-            (identical(other.title, title) || other.title == title) &&
-            const DeepCollectionEquality()
-                .equals(other.thumbnails, thumbnails) &&
-            (identical(other.country, country) || other.country == country) &&
-            const DeepCollectionEquality()
-                .equals(other.channelLinks, channelLinks));
-  }
-
-  @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      description,
-      viewCount,
-      joinDate,
-      title,
-      const DeepCollectionEquality().hash(thumbnails),
-      country,
-      const DeepCollectionEquality().hash(channelLinks));
-
-  @override
-  String toString() {
-    return 'ChannelAbout(description: $description, viewCount: $viewCount, joinDate: $joinDate, title: $title, thumbnails: $thumbnails, country: $country, channelLinks: $channelLinks)';
-  }
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract mixin class $ChannelAboutCopyWith<$Res> {
+abstract class $ChannelAboutCopyWith<$Res> {
   factory $ChannelAboutCopyWith(
-          ChannelAbout value, $Res Function(ChannelAbout) _then) =
-      _$ChannelAboutCopyWithImpl;
+          ChannelAbout value, $Res Function(ChannelAbout) then) =
+      _$ChannelAboutCopyWithImpl<$Res, ChannelAbout>;
   @useResult
   $Res call(
       {String? description,
@@ -97,11 +62,14 @@ abstract mixin class $ChannelAboutCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$ChannelAboutCopyWithImpl<$Res> implements $ChannelAboutCopyWith<$Res> {
-  _$ChannelAboutCopyWithImpl(this._self, this._then);
+class _$ChannelAboutCopyWithImpl<$Res, $Val extends ChannelAbout>
+    implements $ChannelAboutCopyWith<$Res> {
+  _$ChannelAboutCopyWithImpl(this._value, this._then);
 
-  final ChannelAbout _self;
-  final $Res Function(ChannelAbout) _then;
+  // ignore: unused_field
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
   /// Create a copy of ChannelAbout
   /// with the given fields replaced by the non-null parameter values.
@@ -116,227 +84,115 @@ class _$ChannelAboutCopyWithImpl<$Res> implements $ChannelAboutCopyWith<$Res> {
     Object? country = freezed,
     Object? channelLinks = null,
   }) {
-    return _then(_self.copyWith(
+    return _then(_value.copyWith(
       description: freezed == description
-          ? _self.description
+          ? _value.description
           : description // ignore: cast_nullable_to_non_nullable
               as String?,
       viewCount: freezed == viewCount
-          ? _self.viewCount
+          ? _value.viewCount
           : viewCount // ignore: cast_nullable_to_non_nullable
               as int?,
       joinDate: freezed == joinDate
-          ? _self.joinDate
+          ? _value.joinDate
           : joinDate // ignore: cast_nullable_to_non_nullable
               as String?,
       title: null == title
-          ? _self.title
+          ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
               as String,
       thumbnails: null == thumbnails
-          ? _self.thumbnails
+          ? _value.thumbnails
           : thumbnails // ignore: cast_nullable_to_non_nullable
               as List<Thumbnail>,
       country: freezed == country
-          ? _self.country
+          ? _value.country
           : country // ignore: cast_nullable_to_non_nullable
               as String?,
       channelLinks: null == channelLinks
-          ? _self.channelLinks
+          ? _value.channelLinks
+          : channelLinks // ignore: cast_nullable_to_non_nullable
+              as List<ChannelLink>,
+    ) as $Val);
+  }
+}
+
+/// @nodoc
+abstract class _$$ChannelAboutImplCopyWith<$Res>
+    implements $ChannelAboutCopyWith<$Res> {
+  factory _$$ChannelAboutImplCopyWith(
+          _$ChannelAboutImpl value, $Res Function(_$ChannelAboutImpl) then) =
+      __$$ChannelAboutImplCopyWithImpl<$Res>;
+  @override
+  @useResult
+  $Res call(
+      {String? description,
+      int? viewCount,
+      String? joinDate,
+      String title,
+      List<Thumbnail> thumbnails,
+      String? country,
+      List<ChannelLink> channelLinks});
+}
+
+/// @nodoc
+class __$$ChannelAboutImplCopyWithImpl<$Res>
+    extends _$ChannelAboutCopyWithImpl<$Res, _$ChannelAboutImpl>
+    implements _$$ChannelAboutImplCopyWith<$Res> {
+  __$$ChannelAboutImplCopyWithImpl(
+      _$ChannelAboutImpl _value, $Res Function(_$ChannelAboutImpl) _then)
+      : super(_value, _then);
+
+  /// Create a copy of ChannelAbout
+  /// with the given fields replaced by the non-null parameter values.
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? description = freezed,
+    Object? viewCount = freezed,
+    Object? joinDate = freezed,
+    Object? title = null,
+    Object? thumbnails = null,
+    Object? country = freezed,
+    Object? channelLinks = null,
+  }) {
+    return _then(_$ChannelAboutImpl(
+      freezed == description
+          ? _value.description
+          : description // ignore: cast_nullable_to_non_nullable
+              as String?,
+      freezed == viewCount
+          ? _value.viewCount
+          : viewCount // ignore: cast_nullable_to_non_nullable
+              as int?,
+      freezed == joinDate
+          ? _value.joinDate
+          : joinDate // ignore: cast_nullable_to_non_nullable
+              as String?,
+      null == title
+          ? _value.title
+          : title // ignore: cast_nullable_to_non_nullable
+              as String,
+      null == thumbnails
+          ? _value._thumbnails
+          : thumbnails // ignore: cast_nullable_to_non_nullable
+              as List<Thumbnail>,
+      freezed == country
+          ? _value.country
+          : country // ignore: cast_nullable_to_non_nullable
+              as String?,
+      null == channelLinks
+          ? _value._channelLinks
           : channelLinks // ignore: cast_nullable_to_non_nullable
               as List<ChannelLink>,
     ));
   }
 }
 
-/// Adds pattern-matching-related methods to [ChannelAbout].
-extension ChannelAboutPatterns on ChannelAbout {
-  /// A variant of `map` that fallback to returning `orElse`.
-  ///
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case final Subclass value:
-  ///     return ...;
-  ///   case _:
-  ///     return orElse();
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>(
-    TResult Function(_ChannelAbout value)? $default, {
-    required TResult orElse(),
-  }) {
-    final _that = this;
-    switch (_that) {
-      case _ChannelAbout() when $default != null:
-        return $default(_that);
-      case _:
-        return orElse();
-    }
-  }
-
-  /// A `switch`-like method, using callbacks.
-  ///
-  /// Callbacks receives the raw object, upcasted.
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case final Subclass value:
-  ///     return ...;
-  ///   case final Subclass2 value:
-  ///     return ...;
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>(
-    TResult Function(_ChannelAbout value) $default,
-  ) {
-    final _that = this;
-    switch (_that) {
-      case _ChannelAbout():
-        return $default(_that);
-      case _:
-        throw StateError('Unexpected subclass');
-    }
-  }
-
-  /// A variant of `map` that fallback to returning `null`.
-  ///
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case final Subclass value:
-  ///     return ...;
-  ///   case _:
-  ///     return null;
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>(
-    TResult? Function(_ChannelAbout value)? $default,
-  ) {
-    final _that = this;
-    switch (_that) {
-      case _ChannelAbout() when $default != null:
-        return $default(_that);
-      case _:
-        return null;
-    }
-  }
-
-  /// A variant of `when` that fallback to an `orElse` callback.
-  ///
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case Subclass(:final field):
-  ///     return ...;
-  ///   case _:
-  ///     return orElse();
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>(
-    TResult Function(
-            String? description,
-            int? viewCount,
-            String? joinDate,
-            String title,
-            List<Thumbnail> thumbnails,
-            String? country,
-            List<ChannelLink> channelLinks)?
-        $default, {
-    required TResult orElse(),
-  }) {
-    final _that = this;
-    switch (_that) {
-      case _ChannelAbout() when $default != null:
-        return $default(_that.description, _that.viewCount, _that.joinDate,
-            _that.title, _that.thumbnails, _that.country, _that.channelLinks);
-      case _:
-        return orElse();
-    }
-  }
-
-  /// A `switch`-like method, using callbacks.
-  ///
-  /// As opposed to `map`, this offers destructuring.
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case Subclass(:final field):
-  ///     return ...;
-  ///   case Subclass2(:final field2):
-  ///     return ...;
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>(
-    TResult Function(
-            String? description,
-            int? viewCount,
-            String? joinDate,
-            String title,
-            List<Thumbnail> thumbnails,
-            String? country,
-            List<ChannelLink> channelLinks)
-        $default,
-  ) {
-    final _that = this;
-    switch (_that) {
-      case _ChannelAbout():
-        return $default(_that.description, _that.viewCount, _that.joinDate,
-            _that.title, _that.thumbnails, _that.country, _that.channelLinks);
-      case _:
-        throw StateError('Unexpected subclass');
-    }
-  }
-
-  /// A variant of `when` that fallback to returning `null`
-  ///
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case Subclass(:final field):
-  ///     return ...;
-  ///   case _:
-  ///     return null;
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>(
-    TResult? Function(
-            String? description,
-            int? viewCount,
-            String? joinDate,
-            String title,
-            List<Thumbnail> thumbnails,
-            String? country,
-            List<ChannelLink> channelLinks)?
-        $default,
-  ) {
-    final _that = this;
-    switch (_that) {
-      case _ChannelAbout() when $default != null:
-        return $default(_that.description, _that.viewCount, _that.joinDate,
-            _that.title, _that.thumbnails, _that.country, _that.channelLinks);
-      case _:
-        return null;
-    }
-  }
-}
-
 /// @nodoc
 
-class _ChannelAbout implements ChannelAbout {
-  const _ChannelAbout(
+class _$ChannelAboutImpl implements _ChannelAbout {
+  const _$ChannelAboutImpl(
       this.description,
       this.viewCount,
       this.joinDate,
@@ -390,19 +246,16 @@ class _ChannelAbout implements ChannelAbout {
     return EqualUnmodifiableListView(_channelLinks);
   }
 
-  /// Create a copy of ChannelAbout
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @pragma('vm:prefer-inline')
-  _$ChannelAboutCopyWith<_ChannelAbout> get copyWith =>
-      __$ChannelAboutCopyWithImpl<_ChannelAbout>(this, _$identity);
+  String toString() {
+    return 'ChannelAbout(description: $description, viewCount: $viewCount, joinDate: $joinDate, title: $title, thumbnails: $thumbnails, country: $country, channelLinks: $channelLinks)';
+  }
 
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _ChannelAbout &&
+            other is _$ChannelAboutImpl &&
             (identical(other.description, description) ||
                 other.description == description) &&
             (identical(other.viewCount, viewCount) ||
@@ -428,82 +281,58 @@ class _ChannelAbout implements ChannelAbout {
       country,
       const DeepCollectionEquality().hash(_channelLinks));
 
+  /// Create a copy of ChannelAbout
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
-  String toString() {
-    return 'ChannelAbout(description: $description, viewCount: $viewCount, joinDate: $joinDate, title: $title, thumbnails: $thumbnails, country: $country, channelLinks: $channelLinks)';
-  }
+  @pragma('vm:prefer-inline')
+  _$$ChannelAboutImplCopyWith<_$ChannelAboutImpl> get copyWith =>
+      __$$ChannelAboutImplCopyWithImpl<_$ChannelAboutImpl>(this, _$identity);
 }
 
-/// @nodoc
-abstract mixin class _$ChannelAboutCopyWith<$Res>
-    implements $ChannelAboutCopyWith<$Res> {
-  factory _$ChannelAboutCopyWith(
-          _ChannelAbout value, $Res Function(_ChannelAbout) _then) =
-      __$ChannelAboutCopyWithImpl;
+abstract class _ChannelAbout implements ChannelAbout {
+  const factory _ChannelAbout(
+      final String? description,
+      final int? viewCount,
+      final String? joinDate,
+      final String title,
+      final List<Thumbnail> thumbnails,
+      final String? country,
+      final List<ChannelLink> channelLinks) = _$ChannelAboutImpl;
+
+  /// Full channel description.
   @override
-  @useResult
-  $Res call(
-      {String? description,
-      int? viewCount,
-      String? joinDate,
-      String title,
-      List<Thumbnail> thumbnails,
-      String? country,
-      List<ChannelLink> channelLinks});
-}
+  String? get description;
 
-/// @nodoc
-class __$ChannelAboutCopyWithImpl<$Res>
-    implements _$ChannelAboutCopyWith<$Res> {
-  __$ChannelAboutCopyWithImpl(this._self, this._then);
+  /// Channel view count.
+  @override
+  int? get viewCount;
 
-  final _ChannelAbout _self;
-  final $Res Function(_ChannelAbout) _then;
+  /// Channel join date.
+  /// Formatted as: Gen 01, 2000
+  @override
+  String? get joinDate;
+
+  /// Channel title.
+  @override
+  String get title;
+
+  /// Channel thumbnails.
+  @override
+  List<Thumbnail> get thumbnails;
+
+  /// Channel country.
+  @override
+  String? get country;
+
+  /// Channel links.
+  @override
+  List<ChannelLink> get channelLinks;
 
   /// Create a copy of ChannelAbout
   /// with the given fields replaced by the non-null parameter values.
   @override
-  @pragma('vm:prefer-inline')
-  $Res call({
-    Object? description = freezed,
-    Object? viewCount = freezed,
-    Object? joinDate = freezed,
-    Object? title = null,
-    Object? thumbnails = null,
-    Object? country = freezed,
-    Object? channelLinks = null,
-  }) {
-    return _then(_ChannelAbout(
-      freezed == description
-          ? _self.description
-          : description // ignore: cast_nullable_to_non_nullable
-              as String?,
-      freezed == viewCount
-          ? _self.viewCount
-          : viewCount // ignore: cast_nullable_to_non_nullable
-              as int?,
-      freezed == joinDate
-          ? _self.joinDate
-          : joinDate // ignore: cast_nullable_to_non_nullable
-              as String?,
-      null == title
-          ? _self.title
-          : title // ignore: cast_nullable_to_non_nullable
-              as String,
-      null == thumbnails
-          ? _self._thumbnails
-          : thumbnails // ignore: cast_nullable_to_non_nullable
-              as List<Thumbnail>,
-      freezed == country
-          ? _self.country
-          : country // ignore: cast_nullable_to_non_nullable
-              as String?,
-      null == channelLinks
-          ? _self._channelLinks
-          : channelLinks // ignore: cast_nullable_to_non_nullable
-              as List<ChannelLink>,
-    ));
-  }
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  _$$ChannelAboutImplCopyWith<_$ChannelAboutImpl> get copyWith =>
+      throw _privateConstructorUsedError;
 }
-
-// dart format on

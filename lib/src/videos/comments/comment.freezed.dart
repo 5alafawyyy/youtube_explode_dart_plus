@@ -1,5 +1,5 @@
-// GENERATED CODE - DO NOT MODIFY BY HAND
 // coverage:ignore-file
+// GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
@@ -9,80 +9,50 @@ part of 'comment.dart';
 // FreezedGenerator
 // **************************************************************************
 
-// dart format off
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$Comment {
   /// Comment author name.
-  String get author;
+  String get author => throw _privateConstructorUsedError;
 
   /// Comment author channel id.
-  ChannelId get channelId;
+  ChannelId get channelId => throw _privateConstructorUsedError;
 
   /// Comment text.
-  String get text;
+  String get text => throw _privateConstructorUsedError;
 
   /// Comment likes count.
-  int get likeCount;
+  int get likeCount => throw _privateConstructorUsedError;
 
   /// Published time as string. (For example: "2 years ago")
-  String get publishedTime;
+  String get publishedTime => throw _privateConstructorUsedError;
 
   /// Comment reply count.
-  int get replyCount;
+  int get replyCount => throw _privateConstructorUsedError;
 
   /// True if the comment is hearted by the creator.
 //ignore: avoid_positional_boolean_parameters
-  bool get isHearted;
+  bool get isHearted => throw _privateConstructorUsedError;
 
   /// Used internally.
   /// Shouldn't be used in the code.
   @internal
-  String? get continuation;
+  String? get continuation => throw _privateConstructorUsedError;
 
   /// Create a copy of Comment
   /// with the given fields replaced by the non-null parameter values.
   @JsonKey(includeFromJson: false, includeToJson: false)
-  @pragma('vm:prefer-inline')
-  $CommentCopyWith<Comment> get copyWith =>
-      _$CommentCopyWithImpl<Comment>(this as Comment, _$identity);
-
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is Comment &&
-            (identical(other.author, author) || other.author == author) &&
-            (identical(other.channelId, channelId) ||
-                other.channelId == channelId) &&
-            (identical(other.text, text) || other.text == text) &&
-            (identical(other.likeCount, likeCount) ||
-                other.likeCount == likeCount) &&
-            (identical(other.publishedTime, publishedTime) ||
-                other.publishedTime == publishedTime) &&
-            (identical(other.replyCount, replyCount) ||
-                other.replyCount == replyCount) &&
-            (identical(other.isHearted, isHearted) ||
-                other.isHearted == isHearted) &&
-            (identical(other.continuation, continuation) ||
-                other.continuation == continuation));
-  }
-
-  @override
-  int get hashCode => Object.hash(runtimeType, author, channelId, text,
-      likeCount, publishedTime, replyCount, isHearted, continuation);
-
-  @override
-  String toString() {
-    return 'Comment(author: $author, channelId: $channelId, text: $text, likeCount: $likeCount, publishedTime: $publishedTime, replyCount: $replyCount, isHearted: $isHearted, continuation: $continuation)';
-  }
+  $CommentCopyWith<Comment> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract mixin class $CommentCopyWith<$Res> {
-  factory $CommentCopyWith(Comment value, $Res Function(Comment) _then) =
-      _$CommentCopyWithImpl;
+abstract class $CommentCopyWith<$Res> {
+  factory $CommentCopyWith(Comment value, $Res Function(Comment) then) =
+      _$CommentCopyWithImpl<$Res, Comment>;
   @useResult
   $Res call(
       {String author,
@@ -98,11 +68,14 @@ abstract mixin class $CommentCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$CommentCopyWithImpl<$Res> implements $CommentCopyWith<$Res> {
-  _$CommentCopyWithImpl(this._self, this._then);
+class _$CommentCopyWithImpl<$Res, $Val extends Comment>
+    implements $CommentCopyWith<$Res> {
+  _$CommentCopyWithImpl(this._value, this._then);
 
-  final Comment _self;
-  final $Res Function(Comment) _then;
+  // ignore: unused_field
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
   /// Create a copy of Comment
   /// with the given fields replaced by the non-null parameter values.
@@ -118,40 +91,40 @@ class _$CommentCopyWithImpl<$Res> implements $CommentCopyWith<$Res> {
     Object? isHearted = null,
     Object? continuation = freezed,
   }) {
-    return _then(_self.copyWith(
+    return _then(_value.copyWith(
       author: null == author
-          ? _self.author
+          ? _value.author
           : author // ignore: cast_nullable_to_non_nullable
               as String,
       channelId: null == channelId
-          ? _self.channelId
+          ? _value.channelId
           : channelId // ignore: cast_nullable_to_non_nullable
               as ChannelId,
       text: null == text
-          ? _self.text
+          ? _value.text
           : text // ignore: cast_nullable_to_non_nullable
               as String,
       likeCount: null == likeCount
-          ? _self.likeCount
+          ? _value.likeCount
           : likeCount // ignore: cast_nullable_to_non_nullable
               as int,
       publishedTime: null == publishedTime
-          ? _self.publishedTime
+          ? _value.publishedTime
           : publishedTime // ignore: cast_nullable_to_non_nullable
               as String,
       replyCount: null == replyCount
-          ? _self.replyCount
+          ? _value.replyCount
           : replyCount // ignore: cast_nullable_to_non_nullable
               as int,
       isHearted: null == isHearted
-          ? _self.isHearted
+          ? _value.isHearted
           : isHearted // ignore: cast_nullable_to_non_nullable
               as bool,
       continuation: freezed == continuation
-          ? _self.continuation
+          ? _value.continuation
           : continuation // ignore: cast_nullable_to_non_nullable
               as String?,
-    ));
+    ) as $Val);
   }
 
   /// Create a copy of Comment
@@ -159,224 +132,96 @@ class _$CommentCopyWithImpl<$Res> implements $CommentCopyWith<$Res> {
   @override
   @pragma('vm:prefer-inline')
   $ChannelIdCopyWith<$Res> get channelId {
-    return $ChannelIdCopyWith<$Res>(_self.channelId, (value) {
-      return _then(_self.copyWith(channelId: value));
+    return $ChannelIdCopyWith<$Res>(_value.channelId, (value) {
+      return _then(_value.copyWith(channelId: value) as $Val);
     });
   }
 }
 
-/// Adds pattern-matching-related methods to [Comment].
-extension CommentPatterns on Comment {
-  /// A variant of `map` that fallback to returning `orElse`.
-  ///
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case final Subclass value:
-  ///     return ...;
-  ///   case _:
-  ///     return orElse();
-  /// }
-  /// ```
+/// @nodoc
+abstract class _$$CommentImplCopyWith<$Res> implements $CommentCopyWith<$Res> {
+  factory _$$CommentImplCopyWith(
+          _$CommentImpl value, $Res Function(_$CommentImpl) then) =
+      __$$CommentImplCopyWithImpl<$Res>;
+  @override
+  @useResult
+  $Res call(
+      {String author,
+      ChannelId channelId,
+      String text,
+      int likeCount,
+      String publishedTime,
+      int replyCount,
+      bool isHearted,
+      @internal String? continuation});
 
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>(
-    TResult Function(_Comment value)? $default, {
-    required TResult orElse(),
+  @override
+  $ChannelIdCopyWith<$Res> get channelId;
+}
+
+/// @nodoc
+class __$$CommentImplCopyWithImpl<$Res>
+    extends _$CommentCopyWithImpl<$Res, _$CommentImpl>
+    implements _$$CommentImplCopyWith<$Res> {
+  __$$CommentImplCopyWithImpl(
+      _$CommentImpl _value, $Res Function(_$CommentImpl) _then)
+      : super(_value, _then);
+
+  /// Create a copy of Comment
+  /// with the given fields replaced by the non-null parameter values.
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? author = null,
+    Object? channelId = null,
+    Object? text = null,
+    Object? likeCount = null,
+    Object? publishedTime = null,
+    Object? replyCount = null,
+    Object? isHearted = null,
+    Object? continuation = freezed,
   }) {
-    final _that = this;
-    switch (_that) {
-      case _Comment() when $default != null:
-        return $default(_that);
-      case _:
-        return orElse();
-    }
-  }
-
-  /// A `switch`-like method, using callbacks.
-  ///
-  /// Callbacks receives the raw object, upcasted.
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case final Subclass value:
-  ///     return ...;
-  ///   case final Subclass2 value:
-  ///     return ...;
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>(
-    TResult Function(_Comment value) $default,
-  ) {
-    final _that = this;
-    switch (_that) {
-      case _Comment():
-        return $default(_that);
-      case _:
-        throw StateError('Unexpected subclass');
-    }
-  }
-
-  /// A variant of `map` that fallback to returning `null`.
-  ///
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case final Subclass value:
-  ///     return ...;
-  ///   case _:
-  ///     return null;
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>(
-    TResult? Function(_Comment value)? $default,
-  ) {
-    final _that = this;
-    switch (_that) {
-      case _Comment() when $default != null:
-        return $default(_that);
-      case _:
-        return null;
-    }
-  }
-
-  /// A variant of `when` that fallback to an `orElse` callback.
-  ///
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case Subclass(:final field):
-  ///     return ...;
-  ///   case _:
-  ///     return orElse();
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>(
-    TResult Function(
-            String author,
-            ChannelId channelId,
-            String text,
-            int likeCount,
-            String publishedTime,
-            int replyCount,
-            bool isHearted,
-            @internal String? continuation)?
-        $default, {
-    required TResult orElse(),
-  }) {
-    final _that = this;
-    switch (_that) {
-      case _Comment() when $default != null:
-        return $default(
-            _that.author,
-            _that.channelId,
-            _that.text,
-            _that.likeCount,
-            _that.publishedTime,
-            _that.replyCount,
-            _that.isHearted,
-            _that.continuation);
-      case _:
-        return orElse();
-    }
-  }
-
-  /// A `switch`-like method, using callbacks.
-  ///
-  /// As opposed to `map`, this offers destructuring.
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case Subclass(:final field):
-  ///     return ...;
-  ///   case Subclass2(:final field2):
-  ///     return ...;
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>(
-    TResult Function(
-            String author,
-            ChannelId channelId,
-            String text,
-            int likeCount,
-            String publishedTime,
-            int replyCount,
-            bool isHearted,
-            @internal String? continuation)
-        $default,
-  ) {
-    final _that = this;
-    switch (_that) {
-      case _Comment():
-        return $default(
-            _that.author,
-            _that.channelId,
-            _that.text,
-            _that.likeCount,
-            _that.publishedTime,
-            _that.replyCount,
-            _that.isHearted,
-            _that.continuation);
-      case _:
-        throw StateError('Unexpected subclass');
-    }
-  }
-
-  /// A variant of `when` that fallback to returning `null`
-  ///
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case Subclass(:final field):
-  ///     return ...;
-  ///   case _:
-  ///     return null;
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>(
-    TResult? Function(
-            String author,
-            ChannelId channelId,
-            String text,
-            int likeCount,
-            String publishedTime,
-            int replyCount,
-            bool isHearted,
-            @internal String? continuation)?
-        $default,
-  ) {
-    final _that = this;
-    switch (_that) {
-      case _Comment() when $default != null:
-        return $default(
-            _that.author,
-            _that.channelId,
-            _that.text,
-            _that.likeCount,
-            _that.publishedTime,
-            _that.replyCount,
-            _that.isHearted,
-            _that.continuation);
-      case _:
-        return null;
-    }
+    return _then(_$CommentImpl(
+      null == author
+          ? _value.author
+          : author // ignore: cast_nullable_to_non_nullable
+              as String,
+      null == channelId
+          ? _value.channelId
+          : channelId // ignore: cast_nullable_to_non_nullable
+              as ChannelId,
+      null == text
+          ? _value.text
+          : text // ignore: cast_nullable_to_non_nullable
+              as String,
+      null == likeCount
+          ? _value.likeCount
+          : likeCount // ignore: cast_nullable_to_non_nullable
+              as int,
+      null == publishedTime
+          ? _value.publishedTime
+          : publishedTime // ignore: cast_nullable_to_non_nullable
+              as String,
+      null == replyCount
+          ? _value.replyCount
+          : replyCount // ignore: cast_nullable_to_non_nullable
+              as int,
+      null == isHearted
+          ? _value.isHearted
+          : isHearted // ignore: cast_nullable_to_non_nullable
+              as bool,
+      freezed == continuation
+          ? _value.continuation
+          : continuation // ignore: cast_nullable_to_non_nullable
+              as String?,
+    ));
   }
 }
 
 /// @nodoc
 
-class _Comment implements Comment {
-  const _Comment(
+class _$CommentImpl implements _Comment {
+  const _$CommentImpl(
       this.author,
       this.channelId,
       this.text,
@@ -421,19 +266,16 @@ class _Comment implements Comment {
   @internal
   final String? continuation;
 
-  /// Create a copy of Comment
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @pragma('vm:prefer-inline')
-  _$CommentCopyWith<_Comment> get copyWith =>
-      __$CommentCopyWithImpl<_Comment>(this, _$identity);
+  String toString() {
+    return 'Comment(author: $author, channelId: $channelId, text: $text, likeCount: $likeCount, publishedTime: $publishedTime, replyCount: $replyCount, isHearted: $isHearted, continuation: $continuation)';
+  }
 
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _Comment &&
+            other is _$CommentImpl &&
             (identical(other.author, author) || other.author == author) &&
             (identical(other.channelId, channelId) ||
                 other.channelId == channelId) &&
@@ -454,98 +296,65 @@ class _Comment implements Comment {
   int get hashCode => Object.hash(runtimeType, author, channelId, text,
       likeCount, publishedTime, replyCount, isHearted, continuation);
 
+  /// Create a copy of Comment
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
-  String toString() {
-    return 'Comment(author: $author, channelId: $channelId, text: $text, likeCount: $likeCount, publishedTime: $publishedTime, replyCount: $replyCount, isHearted: $isHearted, continuation: $continuation)';
-  }
+  @pragma('vm:prefer-inline')
+  _$$CommentImplCopyWith<_$CommentImpl> get copyWith =>
+      __$$CommentImplCopyWithImpl<_$CommentImpl>(this, _$identity);
 }
 
-/// @nodoc
-abstract mixin class _$CommentCopyWith<$Res> implements $CommentCopyWith<$Res> {
-  factory _$CommentCopyWith(_Comment value, $Res Function(_Comment) _then) =
-      __$CommentCopyWithImpl;
+abstract class _Comment implements Comment {
+  const factory _Comment(
+      final String author,
+      final ChannelId channelId,
+      final String text,
+      final int likeCount,
+      final String publishedTime,
+      final int replyCount,
+      final bool isHearted,
+      @internal final String? continuation) = _$CommentImpl;
+
+  /// Comment author name.
   @override
-  @useResult
-  $Res call(
-      {String author,
-      ChannelId channelId,
-      String text,
-      int likeCount,
-      String publishedTime,
-      int replyCount,
-      bool isHearted,
-      @internal String? continuation});
+  String get author;
 
+  /// Comment author channel id.
   @override
-  $ChannelIdCopyWith<$Res> get channelId;
-}
+  ChannelId get channelId;
 
-/// @nodoc
-class __$CommentCopyWithImpl<$Res> implements _$CommentCopyWith<$Res> {
-  __$CommentCopyWithImpl(this._self, this._then);
+  /// Comment text.
+  @override
+  String get text;
 
-  final _Comment _self;
-  final $Res Function(_Comment) _then;
+  /// Comment likes count.
+  @override
+  int get likeCount;
+
+  /// Published time as string. (For example: "2 years ago")
+  @override
+  String get publishedTime;
+
+  /// Comment reply count.
+  @override
+  int get replyCount;
+
+  /// True if the comment is hearted by the creator.
+//ignore: avoid_positional_boolean_parameters
+  @override
+  bool get isHearted;
+
+  /// Used internally.
+  /// Shouldn't be used in the code.
+  @override
+  @internal
+  String? get continuation;
 
   /// Create a copy of Comment
   /// with the given fields replaced by the non-null parameter values.
   @override
-  @pragma('vm:prefer-inline')
-  $Res call({
-    Object? author = null,
-    Object? channelId = null,
-    Object? text = null,
-    Object? likeCount = null,
-    Object? publishedTime = null,
-    Object? replyCount = null,
-    Object? isHearted = null,
-    Object? continuation = freezed,
-  }) {
-    return _then(_Comment(
-      null == author
-          ? _self.author
-          : author // ignore: cast_nullable_to_non_nullable
-              as String,
-      null == channelId
-          ? _self.channelId
-          : channelId // ignore: cast_nullable_to_non_nullable
-              as ChannelId,
-      null == text
-          ? _self.text
-          : text // ignore: cast_nullable_to_non_nullable
-              as String,
-      null == likeCount
-          ? _self.likeCount
-          : likeCount // ignore: cast_nullable_to_non_nullable
-              as int,
-      null == publishedTime
-          ? _self.publishedTime
-          : publishedTime // ignore: cast_nullable_to_non_nullable
-              as String,
-      null == replyCount
-          ? _self.replyCount
-          : replyCount // ignore: cast_nullable_to_non_nullable
-              as int,
-      null == isHearted
-          ? _self.isHearted
-          : isHearted // ignore: cast_nullable_to_non_nullable
-              as bool,
-      freezed == continuation
-          ? _self.continuation
-          : continuation // ignore: cast_nullable_to_non_nullable
-              as String?,
-    ));
-  }
-
-  /// Create a copy of Comment
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $ChannelIdCopyWith<$Res> get channelId {
-    return $ChannelIdCopyWith<$Res>(_self.channelId, (value) {
-      return _then(_self.copyWith(channelId: value));
-    });
-  }
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  _$$CommentImplCopyWith<_$CommentImpl> get copyWith =>
+      throw _privateConstructorUsedError;
 }
-
-// dart format on

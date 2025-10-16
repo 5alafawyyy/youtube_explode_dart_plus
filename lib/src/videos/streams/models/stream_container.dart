@@ -5,7 +5,7 @@ part 'stream_container.g.dart';
 
 /// Stream container.
 @freezed
-abstract class StreamContainer with _$StreamContainer {
+class StreamContainer with _$StreamContainer {
   /// Initializes an instance of [StreamContainer]
   const factory StreamContainer._internal(
     /// Container name.
@@ -38,7 +38,10 @@ abstract class StreamContainer with _$StreamContainer {
       '3gpp' => StreamContainer.tgpp,
       'm3u8' => StreamContainer.m3u8,
       _ => throw ArgumentError.value(
-          name, 'name', 'Valid values: mp4, webm, 3gpp'),
+        name,
+        'name',
+        'Valid values: mp4, webm, 3gpp',
+      ),
     };
   }
 

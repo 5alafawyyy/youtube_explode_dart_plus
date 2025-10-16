@@ -6,7 +6,7 @@ part 'channel_id.freezed.dart';
 
 /// Encapsulates a valid YouTube channel ID.
 @freezed
-abstract class ChannelId with _$ChannelId {
+class ChannelId with _$ChannelId {
   /// Initializes an instance of [ChannelId]
   factory ChannelId(String value) {
     final id = parseChannelId(value);
@@ -60,9 +60,9 @@ abstract class ChannelId with _$ChannelId {
       return url;
     }
 
-    final regMatch = RegExp(r'youtube\..+?/channel/(.*?)(?:\?|&|/|$)')
-        .firstMatch(url)
-        ?.group(1);
+    final regMatch = RegExp(
+      r'youtube\..+?/channel/(.*?)(?:\?|&|/|$)',
+    ).firstMatch(url)?.group(1);
     if (!regMatch.isNullOrWhiteSpace && validateChannelId(regMatch!)) {
       return regMatch;
     }

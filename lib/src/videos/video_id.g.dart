@@ -8,10 +8,12 @@ part of 'video_id.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_VideoId _$VideoIdFromJson(Map<String, dynamic> json) => _VideoId(
+_$VideoIdImpl _$$VideoIdImplFromJson(Map<String, dynamic> json) =>
+    _$VideoIdImpl(
       json['value'] as String,
     );
 
-Map<String, dynamic> _$VideoIdToJson(_VideoId instance) => <String, dynamic>{
+Map<String, dynamic> _$$VideoIdImplToJson(_$VideoIdImpl instance) =>
+    <String, dynamic>{
       'value': instance.value,
     };

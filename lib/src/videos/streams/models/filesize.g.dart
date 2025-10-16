@@ -8,10 +8,12 @@ part of 'filesize.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_FileSize _$FileSizeFromJson(Map<String, dynamic> json) => _FileSize(
+_$FileSizeImpl _$$FileSizeImplFromJson(Map<String, dynamic> json) =>
+    _$FileSizeImpl(
       (json['totalBytes'] as num).toInt(),
     );
 
-Map<String, dynamic> _$FileSizeToJson(_FileSize instance) => <String, dynamic>{
+Map<String, dynamic> _$$FileSizeImplToJson(_$FileSizeImpl instance) =>
+    <String, dynamic>{
       'totalBytes': instance.totalBytes,
     };
