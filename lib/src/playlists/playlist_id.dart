@@ -6,19 +6,15 @@ part 'playlist_id.freezed.dart';
 
 /// Encapsulates a valid YouTube playlist ID.
 @freezed
-class PlaylistId with _$PlaylistId {
-  static final _regMatchExp = RegExp(
-    r'youtube\..+?/playlist.*?list=(.*?)(?:&|/|$)',
-  );
-  static final _compositeMatchExp = RegExp(
-    r'youtube\..+?/watch.*?list=(.*?)(?:&|/|$)',
-  );
-  static final _shortCompositeMatchExp = RegExp(
-    r'youtu\.be/.*?/.*?list=(.*?)(?:&|/|$)',
-  );
-  static final _embedCompositeMatchExp = RegExp(
-    r'youtube\..+?/embed/.*?/.*?list=(.*?)(?:&|/|$)',
-  );
+abstract class PlaylistId with _$PlaylistId {
+  static final _regMatchExp =
+      RegExp(r'youtube\..+?/playlist.*?list=(.*?)(?:&|/|$)');
+  static final _compositeMatchExp =
+      RegExp(r'youtube\..+?/watch.*?list=(.*?)(?:&|/|$)');
+  static final _shortCompositeMatchExp =
+      RegExp(r'youtu\.be/.*?/.*?list=(.*?)(?:&|/|$)');
+  static final _embedCompositeMatchExp =
+      RegExp(r'youtube\..+?/embed/.*?/.*?list=(.*?)(?:&|/|$)');
 
   /// Initializes an instance of [PlaylistId]
   factory PlaylistId(String idOrUrl) {
@@ -93,17 +89,15 @@ class PlaylistId with _$PlaylistId {
       return compositeMatch;
     }
 
-    final shortCompositeMatch = _shortCompositeMatchExp
-        .firstMatch(url)
-        ?.group(1);
+    final shortCompositeMatch =
+        _shortCompositeMatchExp.firstMatch(url)?.group(1);
     if (!shortCompositeMatch.isNullOrWhiteSpace &&
         validatePlaylistId(shortCompositeMatch!)) {
       return shortCompositeMatch;
     }
 
-    final embedCompositeMatch = _embedCompositeMatchExp
-        .firstMatch(url)
-        ?.group(1);
+    final embedCompositeMatch =
+        _embedCompositeMatchExp.firstMatch(url)?.group(1);
     if (!embedCompositeMatch.isNullOrWhiteSpace &&
         validatePlaylistId(embedCompositeMatch!)) {
       return embedCompositeMatch;
