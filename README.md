@@ -19,6 +19,29 @@ YoutubeExplode is a library that provides an interface to query metadata of YouT
 - Get closed captions.
 - Get video comments.
 
+## Dart 3.x Compatibility Note
+
+⚠️ **Important**: This package currently has Freezed-generated code that may not be fully compatible with Dart 3.x due to underscore parameter naming restrictions. 
+
+**Workaround**: If you encounter compilation errors related to underscore parameters in `.freezed.dart` files, you can:
+
+1. Use the package via Git dependency (recommended):
+```yaml
+dependencies:
+  youtube_explode_dart_plus:
+    git:
+      url: https://github.com/5alafawyyy/youtube_explode_dart_plus.git
+      ref: main
+```
+
+2. Or regenerate Freezed files in your local copy:
+```bash
+dart run build_runner clean
+dart run build_runner build --delete-conflicting-outputs
+```
+
+We're working on a permanent fix for this issue in future releases.
+
 ## Usage
 - [Install](#install)
 - [Downloading a video stream](#downloading-a-video-stream)
