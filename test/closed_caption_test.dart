@@ -29,9 +29,8 @@ void main() {
     final manifest = await yt!.videos.closedCaptions.getManifest('WOxr2dmLHLo');
     final trackInfo = manifest.tracks.first;
 
-    final subtitles = await yt!.videos.closedCaptions.getSubTitles(
-      trackInfo.autoTranslate('it'),
-    );
+    final subtitles = await yt!.videos.closedCaptions
+        .getSubTitles(trackInfo.autoTranslate('it'));
 
     expect(subtitles, isNotEmpty);
   }, skip: skipGH);
@@ -67,9 +66,8 @@ void main() {
         seconds: 22,
       ),
     ); // ignore: avoid_redundant_argument_values
-    final captionPart = caption!.getPartByTime(
-      const Duration(milliseconds: 200),
-    );
+    final captionPart =
+        caption!.getPartByTime(const Duration(milliseconds: 200));
 
     expect(caption, isNotNull);
     expect(captionPart, isNotNull);

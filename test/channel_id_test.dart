@@ -25,7 +25,7 @@ void main() {
       [
         ChannelId('youtube.com/channel/UCQtjJDOYluum87LA4sI6xcg'),
         'UCQtjJDOYluum87LA4sI6xcg',
-      ],
+      ]
     }) {
       test('ChannelURL - ${val[0]}', () {
         expect((val[0] as ChannelId).value, val[1]);

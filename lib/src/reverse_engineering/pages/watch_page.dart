@@ -41,7 +41,8 @@ class WatchPage extends YoutubePage<WatchPageInitialData> {
         .nonNulls
         .firstWhereOrNull((e) => e.contains('player_ias') && e.endsWith('.js'))
         // Hotfix for https://github.com/Hexer10/youtube_explode_dart/issues/363
-        ?.replaceFirst(RegExp(r'\/player\/([a-z0-9]+)\/'), "/player/$fixedPlayerVersion/");
+        ?.replaceFirst(
+            RegExp(r'\/player\/([a-z0-9]+)\/'), "/player/$fixedPlayerVersion/");
     if (url == null) {
       return null;
     }

@@ -31,53 +31,39 @@ void main() {
   });
 
   test('Search only videos', () async {
-    final videos = await yt!.search.searchContent(
-      'Banana',
-      filter: TypeFilters.video,
-    );
+    final videos =
+        await yt!.search.searchContent('Banana', filter: TypeFilters.video);
     expect(videos, everyElement(isA<SearchVideo>()));
   });
 
   test('Search only channels', () async {
-    final channels = await yt!.search.searchContent(
-      'PewDiePie',
-      filter: TypeFilters.channel,
-    );
+    final channels = await yt!.search
+        .searchContent('PewDiePie', filter: TypeFilters.channel);
     expect(channels, everyElement(isA<SearchChannel>()));
   });
 
   test('Search only playlists', () async {
-    final playlists = await yt!.search.searchContent(
-      'Banana',
-      filter: TypeFilters.playlist,
-    );
+    final playlists =
+        await yt!.search.searchContent('Banana', filter: TypeFilters.playlist);
     expect(playlists, isNotEmpty);
     expect(playlists, everyElement(isA<SearchPlaylist>()));
   });
 
   test('Search test search filters', () async {
-    final featureSearch = await yt!.search.searchContent(
-      'hello',
-      filter: FeatureFilters.hd,
-    );
+    final featureSearch =
+        await yt!.search.searchContent('hello', filter: FeatureFilters.hd);
     expect(featureSearch, isNotEmpty);
 
-    final uploadSearch = await yt!.search.searchContent(
-      'hello',
-      filter: UploadDateFilter.lastHour,
-    );
+    final uploadSearch = await yt!.search
+        .searchContent('hello', filter: UploadDateFilter.lastHour);
     expect(uploadSearch, isNotEmpty);
 
-    final durationSearch = await yt!.search.searchContent(
-      'hello',
-      filter: DurationFilters.long,
-    );
+    final durationSearch =
+        await yt!.search.searchContent('hello', filter: DurationFilters.long);
     expect(durationSearch, isNotEmpty);
 
-    final sortSearch = await yt!.search.searchContent(
-      'hello',
-      filter: SortFilters.viewCount,
-    );
+    final sortSearch =
+        await yt!.search.searchContent('hello', filter: SortFilters.viewCount);
     expect(sortSearch, isNotEmpty);
   });
 

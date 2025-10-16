@@ -25,7 +25,8 @@ class VideoController {
     final userAgent = payload['context']!['client']!['userAgent'] as String?;
     final ytCfg = watchPage?.ytCfg;
     // Hotfix for https://github.com/Hexer10/youtube_explode_dart/issues/363
-    if (ytCfg?.containsKey('STS') ?? false) ytCfg!['STS'] = fixedSignatureTimestamp;
+    if (ytCfg?.containsKey('STS') ?? false)
+      ytCfg!['STS'] = fixedSignatureTimestamp;
 
     final body = {
       ...payload,

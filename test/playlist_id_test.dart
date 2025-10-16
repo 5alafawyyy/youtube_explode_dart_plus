@@ -79,7 +79,9 @@ void main() {
   });
 
   group('These are not valid playlist urls', () {
-    for (final val in {'youtube.com/'}) {
+    for (final val in {
+      'youtube.com/',
+    }) {
       test('PlaylistURL - $val', () {
         expect(() => PlaylistId(val), throwsArgumentError);
       });

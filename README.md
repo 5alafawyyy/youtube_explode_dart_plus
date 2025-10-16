@@ -1,8 +1,8 @@
-# YoutubeExplodeDartPlus
+# YoutubeExplodeDart
 This is a port of the [YoutubeExplode] library from C#, most of the functions, doc comments, readme information, is taken from YoutubeExplode repository.
 
-![Pub Version](https://img.shields.io/pub/v/youtube_explode_dart_plus)
-![License](https://img.shields.io/github/license/Hexer10/youtube_explode_dart_plus)
+![Pub Version](https://img.shields.io/pub/v/youtube_explode_dart)
+![License](https://img.shields.io/github/license/Hexer10/youtube_explode_dart)
 ![Lint](https://img.shields.io/badge/style-lint-4BC0F5.svg)
 
 It used to build [Youtube Downloader Flutter](https://github.com/Hexer10/youtube_downloader_flutter) (A cross-platform application to download video streams from youtube using this library & flutter)
@@ -19,29 +19,6 @@ YoutubeExplode is a library that provides an interface to query metadata of YouT
 - Get closed captions.
 - Get video comments.
 
-## Dart 3.x Compatibility Note
-
-⚠️ **Important**: This package currently has Freezed-generated code that may not be fully compatible with Dart 3.x due to underscore parameter naming restrictions. 
-
-**Workaround**: If you encounter compilation errors related to underscore parameters in `.freezed.dart` files, you can:
-
-1. Use the package via Git dependency (recommended):
-```yaml
-dependencies:
-  youtube_explode_dart_plus:
-    git:
-      url: https://github.com/5alafawyyy/youtube_explode_dart_plus.git
-      ref: main
-```
-
-2. Or regenerate Freezed files in your local copy:
-```bash
-dart run build_runner clean
-dart run build_runner build --delete-conflicting-outputs
-```
-
-We're working on a permanent fix for this issue in future releases.
-
 ## Usage
 - [Install](#install)
 - [Downloading a video stream](#downloading-a-video-stream)
@@ -55,7 +32,7 @@ We're working on a permanent fix for this issue in future releases.
 
 Add the dependency to the pubspec.yaml (Check for the latest version)
 ```yaml
-youtube_explode_dart_plus: ^1.0.0
+youtube_explode_dart: ^2.3.4
 ```
 
 Import the library
@@ -253,12 +230,12 @@ You can find how most APIs can be used in the files inside the test/ folder.
 - All the [Contributors] of this repository.
 
 [YoutubeExplode]: https://github.com/Tyrrrz/YoutubeExplode/
-[API]: https://pub.dev/documentation/youtube_explode_dart_plus/latest/youtube_explode_dart_plus/youtube_explode_dart_plus-library.html
-[Examples]: https://github.com/Hexer10/youtube_explode_dart_plus/tree/master/example
+[API]: https://pub.dev/documentation/youtube_explode_dart/latest/youtube_explode/youtube_explode-library.html
+[Examples]: https://github.com/Hexer10/youtube_explode_dart/tree/master/example
 [Tyrrrz]: https://github.com/Tyrrrz/
 [Hexer10]: https://github.com/Hexer10/
-[Contributors]: https://github.com/Hexer10/youtube_explode_dart_plus/graphs/contributors
+[Contributors]: https://github.com/Hexer10/youtube_explode_dart/graphs/contributors
 [EnsembleUI]: https://github.com/EnsembleUI
-[Issue]: https://github.com/Hexer10/youtube_explode_dart_plus/issues
+[Issue]: https://github.com/Hexer10/youtube_explode_dart/issues
 [yt-dlp]: https://github.com/yt-dlp/yt-dlp
 

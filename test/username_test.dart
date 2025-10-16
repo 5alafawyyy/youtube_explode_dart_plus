@@ -28,7 +28,9 @@ void main() {
     }
   });
   group('These are invalid usernames', () {
-    for (final val in {'0123456789ABCDEFGHIJK'}) {
+    for (final val in {
+      '0123456789ABCDEFGHIJK',
+    }) {
       test('Username - $val', () {
         expect(() => Username(val), throwsArgumentError);
       });
@@ -36,7 +38,9 @@ void main() {
   });
 
   group('These are not valid username urls', () {
-    for (final val in {'example.com/user/ProZD'}) {
+    for (final val in {
+      'example.com/user/ProZD',
+    }) {
       test('UsernameURL - $val', () {
         expect(() => Username(val), throwsArgumentError);
       });

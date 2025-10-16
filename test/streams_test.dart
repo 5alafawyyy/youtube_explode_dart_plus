@@ -16,18 +16,21 @@ void main() {
 
   group('Get streams manifest of any video', () {
     for (final videoId in VideoIdData.playable) {
-      test('VideoId - $videoId', () async {
-        final manifest = await yt!.videos.streams.getManifest(videoId.id);
-        expect(manifest.videoOnly, isNotEmpty);
-        expect(manifest.audioOnly, isNotEmpty);
-      }, timeout: const Timeout(Duration(seconds: 90)));
+      test(
+        'VideoId - $videoId',
+        () async {
+          final manifest = await yt!.videos.streams.getManifest(videoId.id);
+          expect(manifest.videoOnly, isNotEmpty);
+          expect(manifest.audioOnly, isNotEmpty);
+        },
+        timeout: const Timeout(Duration(seconds: 90)),
+      );
     }
   }, skip: skipGH);
 
   test('Get full manifest of a video', () async {
-    final manifest = await yt!.videos.streams.getManifest(
-      VideoIdData.normal.id,
-    );
+    final manifest =
+        await yt!.videos.streams.getManifest(VideoIdData.normal.id);
     expect(manifest.streams.length, greaterThan(50));
   }, skip: skipGH);
 
@@ -58,12 +61,16 @@ void main() {
 
   group('Get specific stream of any playable video', () {
     for (final val in VideoIdData.playable) {
-      test('VideoId - $val', () async {
-        final manifest = await yt!.videos.streams.getManifest(val.id);
-        for (final streamInfo in manifest.streams) {
-          expect(yt!.videos.streams.get(streamInfo).first, completes);
-        }
-      }, timeout: const Timeout(Duration(minutes: 20)));
+      test(
+        'VideoId - $val',
+        () async {
+          final manifest = await yt!.videos.streams.getManifest(val.id);
+          for (final streamInfo in manifest.streams) {
+            expect(yt!.videos.streams.get(streamInfo).first, completes);
+          }
+        },
+        timeout: const Timeout(Duration(minutes: 20)),
+      );
     }
   }, skip: skipGH);
 }

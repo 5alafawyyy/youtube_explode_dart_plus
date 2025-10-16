@@ -13,6 +13,7 @@ RegExp _funcExp(String funcName) => RegExp(
 
 final _varsExp = RegExp(r'(?<!\()\b([a-zA-Z][a-zA-Z0-9_$]*)(?![A-Za-z0-9_$])');
 
+
 typedef DeciphererFunc = String Function(
   String sig,
 );

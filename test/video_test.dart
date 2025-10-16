@@ -44,7 +44,12 @@ void main() {
     expect(video.thumbnails.maxResUrl, isNotEmpty);
     expect(
       video.keywords,
-      containsAll(['sourcemod', 'plugin', 'csgo', 'redirect']),
+      containsAll([
+        'sourcemod',
+        'plugin',
+        'csgo',
+        'redirect',
+      ]),
     );
     expect(video.engagement.viewCount, greaterThanOrEqualTo(3000));
     expect(video.engagement.likeCount, greaterThanOrEqualTo(5));

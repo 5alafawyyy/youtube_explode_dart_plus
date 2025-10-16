@@ -60,7 +60,9 @@ void main() {
   test('Get the videos of a youtube channel', () async {
     final videos = await yt!.channels
         .getUploads(
-          ChannelId('https://www.youtube.com/channel/UCqKbtOLx4NCBh5KKMSmbX0g'),
+          ChannelId(
+            'https://www.youtube.com/channel/UCqKbtOLx4NCBh5KKMSmbX0g',
+          ),
         )
         .toList();
     expect(videos.length, greaterThanOrEqualTo(6));
@@ -80,25 +82,22 @@ void main() {
   });
 
   test('Get videos of a youtube channel from the uploads page', () async {
-    final videos = await yt!.channels.getUploadsFromPage(
-      'UC6biysICWOJ-C3P4Tyeggzg',
-    );
+    final videos =
+        await yt!.channels.getUploadsFromPage('UC6biysICWOJ-C3P4Tyeggzg');
     expect(videos, isNotEmpty);
   });
 
   test('Get next page youtube channel uploads page', () async {
-    final videos = await yt!.channels.getUploadsFromPage(
-      'UC6biysICWOJ-C3P4Tyeggzg',
-    );
+    final videos =
+        await yt!.channels.getUploadsFromPage('UC6biysICWOJ-C3P4Tyeggzg');
     final nextPage = await videos.nextPage();
     expect(nextPage!.length, greaterThanOrEqualTo(20));
   });
 
   test('Get shorts of a youtube channel from the uploads page', () async {
     final shorts = await yt!.channels.getUploadsFromPage(
-      'UCMawD8L365TRdcqhQiTDLKA',
-      videoType: VideoType.shorts,
-    );
+        'UCMawD8L365TRdcqhQiTDLKA',
+        videoType: VideoType.shorts);
     expect(shorts, isNotEmpty);
   });
 }
