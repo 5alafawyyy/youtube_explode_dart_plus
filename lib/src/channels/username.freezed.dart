@@ -88,7 +88,7 @@ extension UsernamePatterns on Username {
 
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(_Username value)?? value,
+    TResult Function(_Username value)? _,
     required TResult orElse(),
   }) {
     final _that = this;
@@ -115,7 +115,7 @@ extension UsernamePatterns on Username {
 
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(_Username value)? value,
+    required TResult Function(_Username value) _,
   }) {
     final _that = this;
     switch (_that) {
@@ -140,7 +140,7 @@ extension UsernamePatterns on Username {
 
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_Username value)?? value,
+    TResult? Function(_Username value)? _,
   }) {
     final _that = this;
     switch (_that) {
@@ -165,7 +165,7 @@ extension UsernamePatterns on Username {
 
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function(String value)?? value,
+    TResult Function(String value)? _,
     required TResult orElse(),
   }) {
     final _that = this;
@@ -192,7 +192,7 @@ extension UsernamePatterns on Username {
 
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function(String value)? value,
+    required TResult Function(String value) _,
   }) {
     final _that = this;
     switch (_that) {
@@ -217,7 +217,7 @@ extension UsernamePatterns on Username {
 
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function(String value)?? value,
+    TResult? Function(String value)? _,
   }) {
     final _that = this;
     switch (_that) {

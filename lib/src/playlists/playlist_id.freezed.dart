@@ -84,7 +84,7 @@ extension PlaylistIdPatterns on PlaylistId {
 
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(_PlaylistId value)? internal,
+    TResult Function(_PlaylistId value)? _internal,
     required TResult orElse(),
   }) {
     final _that = this;
@@ -111,7 +111,7 @@ extension PlaylistIdPatterns on PlaylistId {
 
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(_PlaylistId value) internal,
+    required TResult Function(_PlaylistId value) _internal,
   }) {
     final _that = this;
     switch (_that) {
@@ -136,7 +136,7 @@ extension PlaylistIdPatterns on PlaylistId {
 
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_PlaylistId value)? internal,
+    TResult? Function(_PlaylistId value)? _internal,
   }) {
     final _that = this;
     switch (_that) {
@@ -161,7 +161,7 @@ extension PlaylistIdPatterns on PlaylistId {
 
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function(String value)? internal,
+    TResult Function(String value)? _internal,
     required TResult orElse(),
   }) {
     final _that = this;
@@ -188,7 +188,7 @@ extension PlaylistIdPatterns on PlaylistId {
 
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function(String value) internal,
+    required TResult Function(String value) _internal,
   }) {
     final _that = this;
     switch (_that) {
@@ -213,7 +213,7 @@ extension PlaylistIdPatterns on PlaylistId {
 
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function(String value)? internal,
+    TResult? Function(String value)? _internal,
   }) {
     final _that = this;
     switch (_that) {

@@ -91,7 +91,7 @@ extension StreamContainerPatterns on StreamContainer {
 
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(_StreamContainer value)? internal,
+    TResult Function(_StreamContainer value)? _internal,
     required TResult orElse(),
   }) {
     final _that = this;
@@ -118,7 +118,7 @@ extension StreamContainerPatterns on StreamContainer {
 
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(_StreamContainer value) internal,
+    required TResult Function(_StreamContainer value) _internal,
   }) {
     final _that = this;
     switch (_that) {
@@ -143,7 +143,7 @@ extension StreamContainerPatterns on StreamContainer {
 
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_StreamContainer value)? internal,
+    TResult? Function(_StreamContainer value)? _internal,
   }) {
     final _that = this;
     switch (_that) {
@@ -168,7 +168,7 @@ extension StreamContainerPatterns on StreamContainer {
 
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function(String name)? internal,
+    TResult Function(String name)? _internal,
     required TResult orElse(),
   }) {
     final _that = this;
@@ -195,7 +195,7 @@ extension StreamContainerPatterns on StreamContainer {
 
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function(String name) internal,
+    required TResult Function(String name) _internal,
   }) {
     final _that = this;
     switch (_that) {
@@ -220,7 +220,7 @@ extension StreamContainerPatterns on StreamContainer {
 
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function(String name)? internal,
+    TResult? Function(String name)? _internal,
   }) {
     final _that = this;
     switch (_that) {

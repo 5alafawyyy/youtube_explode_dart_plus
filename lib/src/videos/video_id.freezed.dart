@@ -87,7 +87,7 @@ extension VideoIdPatterns on VideoId {
 
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(_VideoId value)? internal,
+    TResult Function(_VideoId value)? _internal,
     required TResult orElse(),
   }) {
     final _that = this;
@@ -114,7 +114,7 @@ extension VideoIdPatterns on VideoId {
 
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(_VideoId value) internal,
+    required TResult Function(_VideoId value) _internal,
   }) {
     final _that = this;
     switch (_that) {
@@ -139,7 +139,7 @@ extension VideoIdPatterns on VideoId {
 
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_VideoId value)? internal,
+    TResult? Function(_VideoId value)? _internal,
   }) {
     final _that = this;
     switch (_that) {
@@ -164,7 +164,7 @@ extension VideoIdPatterns on VideoId {
 
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function(String value)? internal,
+    TResult Function(String value)? _internal,
     required TResult orElse(),
   }) {
     final _that = this;
@@ -191,7 +191,7 @@ extension VideoIdPatterns on VideoId {
 
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function(String value) internal,
+    required TResult Function(String value) _internal,
   }) {
     final _that = this;
     switch (_that) {
@@ -216,7 +216,7 @@ extension VideoIdPatterns on VideoId {
 
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function(String value)? internal,
+    TResult? Function(String value)? _internal,
   }) {
     final _that = this;
     switch (_that) {

@@ -83,7 +83,7 @@ extension ChannelIdPatterns on ChannelId {
 
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(_ChannelId value)? internal,
+    TResult Function(_ChannelId value)? _internal,
     required TResult orElse(),
   }) {
     final _that = this;
@@ -110,7 +110,7 @@ extension ChannelIdPatterns on ChannelId {
 
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(_ChannelId value) internal,
+    required TResult Function(_ChannelId value) _internal,
   }) {
     final _that = this;
     switch (_that) {
@@ -135,7 +135,7 @@ extension ChannelIdPatterns on ChannelId {
 
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_ChannelId value)? internal,
+    TResult? Function(_ChannelId value)? _internal,
   }) {
     final _that = this;
     switch (_that) {
@@ -160,7 +160,7 @@ extension ChannelIdPatterns on ChannelId {
 
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function(String value)? internal,
+    TResult Function(String value)? _internal,
     required TResult orElse(),
   }) {
     final _that = this;
@@ -187,7 +187,7 @@ extension ChannelIdPatterns on ChannelId {
 
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function(String value) internal,
+    required TResult Function(String value) _internal,
   }) {
     final _that = this;
     switch (_that) {
@@ -212,7 +212,7 @@ extension ChannelIdPatterns on ChannelId {
 
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function(String value)? internal,
+    TResult? Function(String value)? _internal,
   }) {
     final _that = this;
     switch (_that) {

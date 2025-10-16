@@ -91,7 +91,7 @@ extension ChannelHandlePatterns on ChannelHandle {
 
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(_ChannelHandle value)?? value,
+    TResult Function(_ChannelHandle value)? _,
     required TResult orElse(),
   }) {
     final _that = this;
@@ -118,7 +118,7 @@ extension ChannelHandlePatterns on ChannelHandle {
 
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(_ChannelHandle value)? value,
+    required TResult Function(_ChannelHandle value) _,
   }) {
     final _that = this;
     switch (_that) {
@@ -143,7 +143,7 @@ extension ChannelHandlePatterns on ChannelHandle {
 
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_ChannelHandle value)?? value,
+    TResult? Function(_ChannelHandle value)? _,
   }) {
     final _that = this;
     switch (_that) {
@@ -168,7 +168,7 @@ extension ChannelHandlePatterns on ChannelHandle {
 
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function(String value)?? value,
+    TResult Function(String value)? _,
     required TResult orElse(),
   }) {
     final _that = this;
@@ -195,7 +195,7 @@ extension ChannelHandlePatterns on ChannelHandle {
 
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function(String value)? value,
+    required TResult Function(String value) _,
   }) {
     final _that = this;
     switch (_that) {
@@ -220,7 +220,7 @@ extension ChannelHandlePatterns on ChannelHandle {
 
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function(String value)?? value,
+    TResult? Function(String value)? _,
   }) {
     final _that = this;
     switch (_that) {

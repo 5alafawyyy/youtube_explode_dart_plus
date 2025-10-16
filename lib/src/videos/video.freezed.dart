@@ -303,7 +303,7 @@ extension VideoPatterns on Video {
 
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(_Video value)? internal,
+    TResult Function(_Video value)? _internal,
     required TResult orElse(),
   }) {
     final _that = this;
@@ -330,7 +330,7 @@ extension VideoPatterns on Video {
 
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(_Video value) internal,
+    required TResult Function(_Video value) _internal,
   }) {
     final _that = this;
     switch (_that) {
@@ -355,7 +355,7 @@ extension VideoPatterns on Video {
 
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_Video value)? internal,
+    TResult? Function(_Video value)? _internal,
   }) {
     final _that = this;
     switch (_that) {
@@ -396,7 +396,7 @@ extension VideoPatterns on Video {
             bool isLive,
             List<MusicData> musicData,
             @internal WatchPage? watchPage)?
-        internal,
+        _internal,
     required TResult orElse(),
   }) {
     final _that = this;
@@ -454,7 +454,7 @@ extension VideoPatterns on Video {
             bool isLive,
             List<MusicData> musicData,
             @internal WatchPage? watchPage)
-        internal,
+        _internal,
   }) {
     final _that = this;
     switch (_that) {
@@ -510,7 +510,7 @@ extension VideoPatterns on Video {
             bool isLive,
             List<MusicData> musicData,
             @internal WatchPage? watchPage)?
-        internal,
+        _internal,
   }) {
     final _that = this;
     switch (_that) {
