@@ -48,8 +48,8 @@ body:
   - type: input
     id: lib_ver
     attributes:
-      label: Package (youtube_explode_dart) version
-      placeholder: 2.3.5
+      label: Package (youtube_explode_dart_plus) version
+      placeholder: 1.0.0
   - type: checkboxes
     attributes:
       label: Checklist

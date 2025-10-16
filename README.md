@@ -1,8 +1,8 @@
-# YoutubeExplodeDart
+# YoutubeExplodeDart Plus
 This is a port of the [YoutubeExplode] library from C#, most of the functions, doc comments, readme information, is taken from YoutubeExplode repository.
 
-![Pub Version](https://img.shields.io/pub/v/youtube_explode_dart)
-![License](https://img.shields.io/github/license/Hexer10/youtube_explode_dart)
+![Pub Version](https://img.shields.io/pub/v/youtube_explode_dart_plus)
+![License](https://img.shields.io/github/license/Hexer10/youtube_explode_dart_plus)
 ![Lint](https://img.shields.io/badge/style-lint-4BC0F5.svg)
 
 It used to build [Youtube Downloader Flutter](https://github.com/Hexer10/youtube_downloader_flutter) (A cross-platform application to download video streams from youtube using this library & flutter)
@@ -32,7 +32,7 @@ YoutubeExplode is a library that provides an interface to query metadata of YouT
 
 Add the dependency to the pubspec.yaml (Check for the latest version)
 ```yaml
-youtube_explode_dart: ^2.3.4
+youtube_explode_dart_plus: ^1.0.3
 ```
 
 Import the library
@@ -230,12 +230,12 @@ You can find how most APIs can be used in the files inside the test/ folder.
 - All the [Contributors] of this repository.
 
 [YoutubeExplode]: https://github.com/Tyrrrz/YoutubeExplode/
-[API]: https://pub.dev/documentation/youtube_explode_dart/latest/youtube_explode/youtube_explode-library.html
-[Examples]: https://github.com/Hexer10/youtube_explode_dart/tree/master/example
+[API]: https://pub.dev/documentation/youtube_explode_dart_plus/latest/youtube_explode_dart_plus/youtube_explode_dart_plus-library.html
+[Examples]: ./example
 [Tyrrrz]: https://github.com/Tyrrrz/
 [Hexer10]: https://github.com/Hexer10/
-[Contributors]: https://github.com/Hexer10/youtube_explode_dart/graphs/contributors
+[Contributors]: https://github.com/your-org-or-username/youtube_explode_dart_plus/graphs/contributors
 [EnsembleUI]: https://github.com/EnsembleUI
-[Issue]: https://github.com/Hexer10/youtube_explode_dart/issues
+[Issue]: https://github.com/your-org-or-username/youtube_explode_dart_plus/issues
 [yt-dlp]: https://github.com/yt-dlp/yt-dlp
 

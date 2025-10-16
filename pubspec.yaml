@@ -1,8 +1,8 @@
 name: youtube_explode_dart_plus
 description: A port in dart of the youtube explode library. Supports several API functions without the need of Youtube API Key.
-version: 1.0.2
-homepage: https://github.com/Hexer10/youtube_explode_dart
-
+version: 1.0.3
+homepage: https://github.com/5alafawyyy/youtube_explode_dart_plus
+ 
 topics:
   - youtube
   - video
@@ -37,3 +37,4 @@ false_secrets:
   - "lib/src/videos/video_controller.dart"
   - "lib/src/videos/youtube_api_client.dart"
   - "example/example.exe"
+  
