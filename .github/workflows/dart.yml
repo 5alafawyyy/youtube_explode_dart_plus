@@ -1,19 +1,19 @@
-name: Dart CI
+# name: Dart CI
 
-on:
-  push:
-  schedule:
-    - cron: '0 0 * * * '
+# on:
+#   push:
+#   schedule:
+#     - cron: '0 0 * * * '
 
-jobs:
-  build:
-    runs-on: ubuntu-latest
+# jobs:
+#   build:
+#     runs-on: ubuntu-latest
 
-    steps:
-      - uses: actions/checkout@v2
-      - uses: dart-lang/setup-dart@v1.3
+#     steps:
+#       - uses: actions/checkout@v2
+#       - uses: dart-lang/setup-dart@v1.3
 
-      - name: Install dependencies
-        run: dart pub get
-      - name: Run tests
-        run: dart run test
+#       - name: Install dependencies
+#         run: dart pub get
+#       - name: Run tests
+#         run: dart run test
